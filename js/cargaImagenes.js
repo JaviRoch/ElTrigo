@@ -31,7 +31,6 @@ function cargaImagenes() {
 				}
 			};
 			img.src = url;
-
 			return ret;
 		};
 
@@ -40,14 +39,9 @@ function cargaImagenes() {
 			doc.addImage(imgData, 'JPEG', 0, 0, 210, 297);
 			doc.addPage();
 
-	
-			
+			doc.save('output.pdf');
 		}
-for (var page = 0; page < 3; page++) {
-	getImageFromUrl(page+'.jpg', createPage);
-}
-if (page = 3) {		
-	doc.save('output.pdf');
-
-}
+	for (var page = 0; page < 3; page++) {
+		getImageFromUrl(page+'.jpg', createPage);
+	}
 }
