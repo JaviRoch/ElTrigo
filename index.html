@@ -1,15 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <title>Trigo jsPDF</title>
-  <script type="text/javascript" src="js/jspdf.debug.js"></script>
-  <script type="text/javascript" src="js/cargaImagenes.js"></script>  
-  <script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
-  <script type="text/javascript" src="js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>El trigo</title>
 </head>
 <body>
-	<a href="javascript:cargaImagenes()" class="button">Crea libro</a></p></div>
+  <center><h1>El trigo, Alimentación colectiva</h1></center>
 
+  <form action="graba.php" method="POST" >
+
+    <p>Edad: <br>
+      <!--<input type="number" min="0" max="132" name="edad">-->
+      <input type="text" name="edad">
+    </p>
+
+    <p>Género: <br>
+      <input type="radio" name="genero" value="femenino"> Femenino<br>
+      <input type="radio" name="genero" value="masculino"> Masculino<br>
+      <input type="radio" name="genero" value="otros"> Otros
+    </p>
+
+
+    <p>Lugar de nacimiento: <br>
+      <input type="radio" name="nacimiento" value="oriente"> Oriente<br>
+      <input type="radio" name="nacimiento" value="poniente"> Poniente<br>
+    </p>
+
+    <p>Situación laboral: <br>
+      <input type="radio" name="laboral" value="estudiante"> Estudiante<br>
+      <input type="radio" name="laboral" value="empleado"> Emplead@<br>
+      <input type="radio" name="laboral" value="desempleado"> Desemplead@<br>
+      <input type="radio" name="laboral" value="jubilado"> Jubilad@<br>
+    </p>
+
+    <P>
+      <input type="submit" value="Grabar">
+    </P>
+
+  </form>
 </body>
 </html>
