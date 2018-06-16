@@ -5,5 +5,12 @@
         "genero": "femenino",
         "nacimiento": "oriente",
         "laboral": "empleado"
+    },
+    {
+        "NLibro": 1,
+        "edad": "tret",
+        "genero": "femenino",
+        "nacimiento": "oriente",
+        "laboral": "estudiante"
     }
 ]

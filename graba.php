@@ -21,8 +21,6 @@ try
      'nacimiento'=> $_POST['nacimiento'],
      'laboral'=> $_POST['laboral'],
   );
-	   echo "formadata ".$formdata['edad']."<br><br>";
-
 
   //Insertamos datos del formulario al array
   array_push($arr_data,$formdata);
@@ -33,10 +31,10 @@ try
 
   //wEscribimos los dato sen el archivo
   if(file_put_contents($myFile, $jsondata)) {
-       echo 'Data successfully saved. <br>Return to <a href="inde3x.html">Home Page</a>';
+       header("Location: creaLibro.html"); 
    }
   else
-       echo "error";
+       echo "error al guardar datos";
 
 }
 catch (Exception $e) {
