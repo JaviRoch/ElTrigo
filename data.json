@@ -1,16 +1,100 @@
 [
     {
-        "NLibro": 0,
-        "edad": "53",
-        "genero": "femenino",
-        "nacimiento": "oriente",
-        "laboral": "empleado"
-    },
-    {
         "NLibro": 1,
         "edad": "tret",
         "genero": "femenino",
         "nacimiento": "oriente",
         "laboral": "estudiante"
+    },
+    {
+        "NLibro": 2,
+        "edad": "5",
+        "genero": "otros",
+        "nacimiento": "oriente",
+        "laboral": "desempleado"
+    },
+    {
+        "NLibro": 3,
+        "edad": "6",
+        "genero": "femenino",
+        "nacimiento": "poniente",
+        "laboral": "estudiante"
+    },
+    {
+        "NLibro": 4,
+        "edad": "6",
+        "genero": "femenino",
+        "nacimiento": "poniente",
+        "laboral": "estudiante"
+    },
+    {
+        "NLibro": 5,
+        "edad": "7",
+        "genero": "femenino",
+        "nacimiento": "poniente",
+        "laboral": "estudiante"
+    },
+    {
+        "NLibro": 6,
+        "edad": "8",
+        "genero": "masculino",
+        "nacimiento": "oriente",
+        "laboral": "empleado"
+    },
+    {
+        "NLibro": 7,
+        "edad": "9",
+        "genero": "femenino",
+        "nacimiento": "poniente",
+        "laboral": "estudiante"
+    },
+    {
+        "NLibro": 8,
+        "edad": "10",
+        "genero": "femenino",
+        "nacimiento": "poniente",
+        "laboral": "estudiante"
+    },
+    {
+        "NLibro": 9,
+        "edad": "11",
+        "genero": "masculino",
+        "nacimiento": "poniente",
+        "laboral": "estudiante"
+    },
+    {
+        "NLibro": 10,
+        "edad": "12",
+        "genero": "masculino",
+        "nacimiento": "poniente",
+        "laboral": "estudiante"
+    },
+    {
+        "NLibro": 11,
+        "edad": "13",
+        "genero": "masculino",
+        "nacimiento": "poniente",
+        "laboral": "estudiante"
+    },
+    {
+        "NLibro": 11,
+        "edad": "5",
+        "genero": "otros",
+        "nacimiento": "poniente",
+        "laboral": "desempleado"
+    },
+    {
+        "NLibro": 12,
+        "edad": "20",
+        "genero": "masculino",
+        "nacimiento": "oriente",
+        "laboral": "estudiante"
+    },
+    {
+        "NLibro": 13,
+        "edad": "28",
+        "genero": "masculino",
+        "nacimiento": "poniente",
+        "laboral": "empleado"
     }
 ]
