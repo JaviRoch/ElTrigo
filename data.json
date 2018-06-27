@@ -96,5 +96,19 @@
         "genero": "masculino",
         "nacimiento": "poniente",
         "laboral": "empleado"
+    },
+    {
+        "NLibro": 14,
+        "edad": null,
+        "genero": "femenino",
+        "nacimiento": "poniente",
+        "laboral": "jubilado"
+    },
+    {
+        "NLibro": 15,
+        "edad": null,
+        "genero": "otros",
+        "nacimiento": "poniente",
+        "laboral": "jubilado"
     }
 ]

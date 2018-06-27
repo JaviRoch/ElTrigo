@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <title>El trigo</title>
 </head>
 <body>
+  <div class="container">
   <center><h1>El trigo, Alimentación colectiva</h1></center>
 
-  <form action="graba.php" method="POST" >
+  <form action="graba.php" method="POST" class="form cf">
 
     <p>Edad: <br>
-      <input type="number" min="0" max="132" name="edad">
+      <input type="text" name="edad">
     </p>
 
-    <p>Género: <br>
-      <input type="radio" name="genero" value="femenino"> Femenino<br>
-      <input type="radio" name="genero" value="masculino"> Masculino<br>
-      <input type="radio" name="genero" value="otros"> Otros
+
+    <section class="plan cf">
+    <p><h2>Género: </h2><br>
+      <input type="radio" name="genero" id="free" value="femenino"> <label class="free-label" for="free">Femenino</label><br>
+      <input type="radio" name="genero" id="basic" value="masculino"> <label class="basic-label" for="basic">Masculino</label><br>
+      <input type="radio" name="genero" id="free1" value="otros"> <label class="free1-label" for="free1">Otros</label>
     </p>
+    </section>
 
 
     <p>Lugar de nacimiento: <br>
@@ -39,5 +44,6 @@
     </P>
 
   </form>
+</div>
 </body>
 </html>
