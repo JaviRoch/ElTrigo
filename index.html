@@ -2,48 +2,65 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <title>El trigo</title>
 </head>
 <body>
-  <div class="container">
-  <center><h1>El trigo, Alimentación colectiva</h1></center>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-7 order-2 order-sm-1 col-md-9 col-lg-9">
+          <div id="Lateral">
+          <form action="graba.php" method="POST" class="form cf">
 
-  <form action="graba.php" method="POST" class="form cf">
-
-    <p>Edad: <br>
-      <input type="text" name="edad">
-    </p>
-
-
-    <section class="plan cf">
-    <p><h2>Género: </h2><br>
-      <input type="radio" name="genero" id="free" value="femenino"> <label class="free-label" for="free">Femenino</label><br>
-      <input type="radio" name="genero" id="basic" value="masculino"> <label class="basic-label" for="basic">Masculino</label><br>
-      <input type="radio" name="genero" id="free1" value="otros"> <label class="free1-label" for="free1">Otros</label>
-    </p>
-    </section>
+            <p><h2>Edad: </h2><br>
+              <input type="text" name="edad">
+            </p>
 
 
-    <p>Lugar de nacimiento: <br>
-      <input type="radio" name="nacimiento" value="oriente"> Oriente<br>
-      <input type="radio" name="nacimiento" value="poniente"> Poniente<br>
-    </p>
+            <section class="plan cf">
+            <p><h2>Género: </h2><br>
+              <input type="radio" name="genero" id="free" value="femenino"> <label class="free-label" for="free">Femenino</label><br>
+              <input type="radio" name="genero" id="basic" value="masculino"> <label class="basic-label" for="basic">Masculino</label><br>
+              <input type="radio" name="genero" id="free1" value="otros"> <label class="free1-label" for="free1">Otros</label>
+            </p>
+            </section>
 
-    <p>Situación laboral: <br>
-      <input type="radio" name="laboral" value="estudiante"> Estudiante<br>
-      <input type="radio" name="laboral" value="empleado"> Emplead@<br>
-      <input type="radio" name="laboral" value="desempleado"> Desemplead@<br>
-      <input type="radio" name="laboral" value="jubilado"> Jubilad@<br>
-    </p>
 
-    <P>
-      <input type="submit" value="Grabar">
-    </P>
+            <p><h2>Lugar de nacimiento: </h2><br>
+              <input type="radio" name="nacimiento" value="oriente"> Oriente<br>
+              <input type="radio" name="nacimiento" value="poniente"> Poniente<br>
+            </p>
 
-  </form>
-</div>
+            <p><h2>Situación laboral: </h2><br>
+              <input type="radio" name="laboral" value="estudiante"> Estudiante<br>
+              <input type="radio" name="laboral" value="empleado"> Emplead@<br>
+              <input type="radio" name="laboral" value="desempleado"> Desemplead@<br>
+              <input type="radio" name="laboral" value="jubilado"> Jubilad@<br>
+            </p>
+
+            <P>
+              <input type="submit" value="Grabar">
+            </P>
+
+          </form>
+        </div>
+        </div>
+        <div class="col-sm-5 order-1 order-sm-2 col-md-3 col-lg-3">
+          <div id="Formulario">
+            <h1>El trigo, Alimentación colectiva</h1>
+
+            <center><h2>ES/EN/FR</h2></center>
+
+            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+            </P>
+          </div>
+        </div>
+    </div>
+  </div>
 </body>
 </html>
