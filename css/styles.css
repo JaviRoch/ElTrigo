@@ -47,7 +47,7 @@ h3{
 /*Etiqueta de cada opción del formulario*/
 .form label{
 	position: absolute;
-	padding: 0px 10px 23px 10px;
+	padding: 0px 5px 23px 5px;
 	color: #ffffff;
 	font-size: 24px;
 	text-align: left;

@@ -138,5 +138,96 @@
         "genero": "otros",
         "nacimiento": "oriente",
         "laboral": "estudiante"
+    },
+    {
+        "NLibro": 20,
+        "edad": "78",
+        "genero": "femenino",
+        "nacimiento": "oriente",
+        "laboral": "estudiante"
+    },
+    {
+        "NLibro": 21,
+        "edad": "45",
+        "genero": "femenino",
+        "nacimiento": "oriente",
+        "laboral": "empleado"
+    },
+    {
+        "NLibro": 22,
+        "edad": "46",
+        "genero": "femenino",
+        "nacimiento": "oriente",
+        "laboral": "empleado"
+    },
+    {
+        "NLibro": 23,
+        "edad": "47",
+        "genero": "femenino",
+        "nacimiento": "oriente",
+        "laboral": "empleado"
+    },
+    {
+        "NLibro": 24,
+        "edad": "47",
+        "genero": "femenino",
+        "nacimiento": "oriente",
+        "laboral": "empleado"
+    },
+    {
+        "NLibro": 25,
+        "edad": "47",
+        "genero": "femenino",
+        "nacimiento": "oriente",
+        "laboral": "empleado"
+    },
+    {
+        "NLibro": 26,
+        "edad": "47",
+        "genero": "femenino",
+        "nacimiento": "oriente",
+        "laboral": "empleado"
+    },
+    {
+        "NLibro": 27,
+        "edad": "47",
+        "genero": "femenino",
+        "nacimiento": "oriente",
+        "laboral": "empleado"
+    },
+    {
+        "NLibro": 28,
+        "edad": "47",
+        "genero": "femenino",
+        "nacimiento": "oriente",
+        "laboral": "empleado"
+    },
+    {
+        "NLibro": 29,
+        "edad": "47",
+        "genero": "femenino",
+        "nacimiento": "oriente",
+        "laboral": "empleado"
+    },
+    {
+        "NLibro": 30,
+        "edad": "4",
+        "genero": "masculino",
+        "nacimiento": "poniente",
+        "laboral": "estudiante"
+    },
+    {
+        "NLibro": 31,
+        "edad": "4",
+        "genero": "otros",
+        "nacimiento": "oriente",
+        "laboral": "empleado"
+    },
+    {
+        "NLibro": 32,
+        "edad": "78",
+        "genero": "masculino",
+        "nacimiento": "poniente",
+        "laboral": "empleado"
     }
 ]

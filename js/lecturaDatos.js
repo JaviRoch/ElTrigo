@@ -1,20 +1,19 @@
-
 // Transferencia des datos desde la base de datos JSON
-var xmlhttp = new XMLHttpRequest()
-var url = "/data.json"
+var xmlhttp = new XMLHttpRequest();
+var url = "/data.json";
 // Función al finalizar operación. Status a 200 ok, status a 404 fail
 xmlhttp.onreadystatechange = function () {
 	if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 		// Guardamos los datos en una variable
-		datos = xmlhttp.responseText
+		datos = xmlhttp.responseText;
 		// Parseamos los datos de JSON a array
-		parseo(datos)
+		parseo(datos);
 }
 }
 
 // Comunicación con el archivo JSON
-xmlhttp.open("GET", url, true)
-xmlhttp.send()
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
 
 // Parseamos los datos desde JSON y guardamos el último libro en una variable
 function parseo (dat) {
@@ -33,6 +32,12 @@ function parseo (dat) {
 
 // Iniciamos función de tratamiento con variable del último libro
 	trata(libro);
+
+
+	var paginas =[0,1,2];
+
+//Llamamos a la función de creación de PDF con las páginas cargadas en la variable paginas
+	cargaImagenes(paginas);
 };
 
 function trata (libro) {
