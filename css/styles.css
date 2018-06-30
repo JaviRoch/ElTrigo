@@ -1,7 +1,6 @@
 body{
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
 	color: #333;
 	background-color: #eee;
 }
@@ -16,8 +15,14 @@ h1{
 	margin: 20px auto;
 }
 
+#Lateral h1{
+		font-family: 'Rubik Mono One', sans-serif;
+		font-size: 2.3rem;
+}
+
 h3{
 	padding-top: 30px;
+	text-decoration: underline;
 }
 
 .sinpadding [class*="col-"] {
@@ -27,14 +32,18 @@ h3{
 }
 
 #Formulario{
-	background-color: #6e6e6e;
-	padding: 7px 30px 0 20px;
+	background-color: #a3a3a3;
+	padding: 7px 6% 0 6%;
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 1.3rem;
 }
 
 #Lateral{
 	background-color: #33ff00;
 	text-align: justify;
-	padding: 50px 20% 0 20%;
+	padding: 50px 6% 0 6%;
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 1.3rem;
 }
 
 /* FORM */
@@ -48,7 +57,7 @@ h3{
 .form label{
 	position: absolute;
 	padding: 0px 5px 23px 5px;
-	color: #ffffff;
+	color: #6e6b6b;
 	font-size: 24px;
 	text-align: left;
 	height: 1em;
@@ -69,6 +78,31 @@ h3{
 /*Resaltado de opción seleccionada*/
 .form .plan input:checked + label, .form .payment-plan input:checked + label, .form .payment-type input:checked + label{
 	background-color: #33ff00;
+	color:black;
+}
+
+/*Campo de number*/
+input[type=number] {
+  border: 2px solid #010101;
+  border-radius: 0;
+	background-color: #a3a3a3;
+	outline: none;
+  -webkit-appearance: none;
+	-moz-appearance:textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*Campo de texto*/
+input[type=trext] {
+  border: 2px solid #010101;
+  border-radius: 0;
+	background-color: #a3a3a3;
+	outline: none;
+  -webkit-appearance: none;
 }
 
 /*Botón*/
