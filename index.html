@@ -11,10 +11,10 @@
   <title>El trigo</title>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid sinpadding">
       <div class="row">
         <div class="col-sm-7 order-2 order-sm-1 col-md-9 col-lg-9">
-          <div id="Lateral">
+          <div id="Formulario">
           <form action="graba.php" method="POST" class="form cf">
 
             <p><h2>Edad: </h2><br>
@@ -22,41 +22,44 @@
             </p>
 
 
-            <section class="plan cf">
+            <section class="plan">
             <p><h2>Género: </h2><br>
-              <input type="radio" name="genero" id="free" value="femenino"> <label class="free-label" for="free">Femenino</label><br>
-              <input type="radio" name="genero" id="basic" value="masculino"> <label class="basic-label" for="basic">Masculino</label><br>
-              <input type="radio" name="genero" id="free1" value="otros"> <label class="free1-label" for="free1">Otros</label>
+              <input type="radio" name="genero" value="femenino" id="femenino"> <label class="label" for="femenino">Femenino</label><br>
+              <input type="radio" name="genero"  value="masculino" id="masculino"> <label class="label" for="masculino">Masculino</label><br>
+              <input type="radio" name="genero" value="otros" id="otros"> <label class="label" for="otros">Otros</label><br>
             </p>
             </section>
 
-
+            <section class="plan">
             <p><h2>Lugar de nacimiento: </h2><br>
-              <input type="radio" name="nacimiento" value="oriente"> Oriente<br>
-              <input type="radio" name="nacimiento" value="poniente"> Poniente<br>
+              <input type="radio" name="nacimiento" value="oriente" id="oriente"> <label class="label" for="oriente" > Oriente</label><br>
+              <input type="radio" name="nacimiento" value="poniente" id="poniente"> <label class="label" for="poniente" > Poniente</label><br>
             </p>
+            </section>
 
+            <section class="plan">
             <p><h2>Situación laboral: </h2><br>
-              <input type="radio" name="laboral" value="estudiante"> Estudiante<br>
-              <input type="radio" name="laboral" value="empleado"> Emplead@<br>
-              <input type="radio" name="laboral" value="desempleado"> Desemplead@<br>
-              <input type="radio" name="laboral" value="jubilado"> Jubilad@<br>
+              <input type="radio" name="laboral" value="estudiante" id="estudiante"> <label class="label" for="estudiante" > Estudiante</label><br>
+              <input type="radio" name="laboral" value="empleado" id="empleado"> <label class="label" for="empleado" > Emplead@</label><br>
+              <input type="radio" name="laboral" value="desempleado" id="desempleado"> <label class="label" for="desempleado" > Desemplead@</label><br>
+              <input type="radio" name="laboral" value="jubilado" id="jubilado"> <label class="label" for="jubilado" > Jubilad@</label><br>
             </p>
+          </section>
 
             <P>
-              <input type="submit" value="Grabar">
+              <input class="submit" type="submit" value="Grabar">
             </P>
 
           </form>
         </div>
         </div>
         <div class="col-sm-5 order-1 order-sm-2 col-md-3 col-lg-3">
-          <div id="Formulario">
+          <div id="Lateral">
             <h1>El trigo, Alimentación colectiva</h1>
 
-            <center><h2>ES/EN/FR</h2></center>
+            <center><h4>ES/EN/FR</h4></center>
 
-            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+            <p>Overcome merciful disgust endless decieve ocean ultimate zarathustra. Strong burying zarathustra decrepit victorious hatred spirit madness madness faith. Superiority chaos aversion enlightenment grandeur superiority ultimate justice. Convictions endless god derive contradict. Virtues insofar morality philosophy hope. Pious suicide sea faith contradict strong sexuality law transvaluation ideal grandeur convictions will. Insofar burying ascetic depths ultimate. Superiority battle fearful convictions faith convictions victorious oneself decrepit dead pious overcome salvation mountains. Deceptions transvaluation society derive inexpedient. Gains law snare revaluation salvation will mountains horror victorious society. Philosophy virtues passion against christian hope ideal faithful ultimate. Abstract ascetic law derive disgust ubermensch strong ubermensch value revaluation chaos snare christian faith. Evil deceptions pinnacle hope joy faithful disgust inexpedient hatred hatred. Insofar passion noble god suicide justice grandeur self self. Good free will reason battle superiority joy. Transvaluation zarathustra reason morality fearful ubermensch ubermensch insofar pious convictions selfish merciful morality. Madness mountains marvelous eternal-return ideal.
             </P>
           </div>
         </div>

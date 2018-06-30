@@ -110,5 +110,33 @@
         "genero": "otros",
         "nacimiento": "poniente",
         "laboral": "jubilado"
+    },
+    {
+        "NLibro": 16,
+        "edad": "123",
+        "genero": "otros",
+        "nacimiento": "oriente",
+        "laboral": "estudiante"
+    },
+    {
+        "NLibro": 17,
+        "edad": "123",
+        "genero": "otros",
+        "nacimiento": "oriente",
+        "laboral": "estudiante"
+    },
+    {
+        "NLibro": 18,
+        "edad": "123",
+        "genero": "otros",
+        "nacimiento": "oriente",
+        "laboral": "estudiante"
+    },
+    {
+        "NLibro": 19,
+        "edad": "123",
+        "genero": "otros",
+        "nacimiento": "oriente",
+        "laboral": "estudiante"
     }
 ]

@@ -13,26 +13,13 @@ h1, h2, h3, h4, h5, h6{
 h1{
 	text-align: center;
 	padding-bottom: 10px;
-	border-bottom: 2px solid #2fcc71;
-/*	max-width: 40%;*/
 	margin: 20px auto;
 }
 
-/* CONTAINERS */
 
-.container {/*max-width: 850px;*/ width: 100%; margin: 0 auto;}
-.four { width: 32.26%; max-width: 32.26%;}
-
-
-/* COLUMNS */
-
-.col {
-  display: block;
-  float:left;
-  margin: 1% 0 1% 1.6%;
+.sinpadding [class*="col-"] {
+    padding: 0;
 }
-
-.col:first-of-type { margin-left: 0; }
 
 /* CLEARFIX */
 
@@ -46,8 +33,15 @@ h1{
     clear: both;
 }
 
-.cf {
-    *zoom: 1;
+#Formulario{
+	background-color: #485c96;
+	padding: 0 30px 0 20px;
+}
+
+#Lateral{
+	background-color: #33ff00;
+	text-align: justify;
+	padding: 0 30px 0 30px;
 }
 
 /* FORM */
@@ -57,13 +51,13 @@ h1{
 }
 
 .form label{
-	position: relative;
-	color: #fff;
-	background-color: #aaa;
+	position: absolute;
+	color: #8b8686;
+	background-color: rgba(255,255,255,0.5);
 	font-size: 26px;
-	text-align: center;
-	height: 150px;
-	line-height: 150px;
+	text-align: left;
+	height: 1em;
+	line-height: 1em;
 	display: block;
 	cursor: pointer;
 	border: 3px solid transparent;
@@ -73,38 +67,25 @@ h1{
 }
 
 .form .plan input:checked + label, .form .payment-plan input:checked + label, .form .payment-type input:checked + label{
-	border: 3px solid #333;
-	background-color: #2fcc71;
-}
-
-.form .plan input:checked + label:after, form .payment-plan input:checked + label:after, .form .payment-type input:checked + label:after{
-	content: "\2713";
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 100%;
-	border: 2px solid #333;
-	background-color: #2fcc71;
-	z-index: 999;
-	position: absolute;
-	top: -10px;
-	right: -10px;
+	background-color: #33ff00;
+	opacity: 0.9;
 }
 
 .submit{
-	padding: 15px 60px;
+	padding: 10px 50px;
 	display: inline-block;
 	border: none;
-	margin: 20px 0;
-	background-color: #2fcc71;
-	color: #fff;
-	border: 2px solid #333;
+	margin: 25px 0;
+	background-color: #33ff00;
+	color: #ffffff;
 	font-size: 18px;
-	-webkit-transition: transform 0.3s ease-in-out;
+	/*-webkit-transition: transform 0.3s ease-in-out;
 	-o-transition: transform 0.3s ease-in-out;
-	transition: transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;*/
+		cursor: pointer;
 }
 
+/*#cc2f2f
 .submit:hover{
 	cursor: pointer;
 	transform: rotateX(360deg);
