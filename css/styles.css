@@ -20,23 +20,21 @@ h3{
 	padding-top: 30px;
 }
 
-
 .sinpadding [class*="col-"] {
-    padding: 0;
+    padding-left: 0;
+		padding-right: 0;
+		margin-bottom: -20px;
 }
-
-/* CLEARFIX */
-
 
 #Formulario{
 	background-color: #6e6e6e;
-	padding: 17px 30px 0 20px;
+	padding: 7px 30px 0 20px;
 }
 
 #Lateral{
 	background-color: #33ff00;
 	text-align: justify;
-	padding: 30px 30px 0 30px;
+	padding: 50px 20% 0 20%;
 }
 
 /* FORM */
@@ -73,7 +71,7 @@ h3{
 	background-color: #33ff00;
 }
 
-
+/*Botón*/
 .submit{
 	padding: 10px 50px;
 	display: inline-block;
