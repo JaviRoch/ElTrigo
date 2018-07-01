@@ -31,16 +31,11 @@ function parseo (dat) {
 	libro.push(laboral);
 
 // Iniciamos función de tratamiento con variable del último libro
-	trata(libro);
+	trataAlgoritm(libro);
 
 
 	var paginas =[0,1,2];
 
 //Llamamos a la función de creación de PDF con las páginas cargadas en la variable paginas
 	cargaImagenes(paginas);
-};
-
-function trata (libro) {
-
-
-};
+}
