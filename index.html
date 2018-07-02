@@ -14,59 +14,138 @@
 </head>
 <body>
     <div class="container-fluid sinpadding">
-      <div class="row">
+      <div class="row backgroundVerde">
         <div class="col-sm-7 order-2 order-sm-1 col-md-6 col-lg-6">
           <div id="Formulario">
-          <form action="graba.php" method="POST" class="form cf">
+            <form action="graba.php" method="POST" class="form cf">
 
-            <p><h3>Edad: </h3><br>
-              <input type="number" name="edad">
-            </p>
+              <p><h3>Edad: </h3><br>
+                <input type="number" name="edad">
+              </p>
 
+              <section class="plan">
+                <p><h3>Género: </h3><br>
+                  <input type="radio" name="genero" value="femenino" id="femenino"> <label class="label" for="femenino">Femenino</label><br>
+                  <input type="radio" name="genero"  value="masculino" id="masculino"> <label class="label" for="masculino">Masculino</label><br>
+                  <input type="radio" name="genero" value="otros" id="otros"> <label class="label" for="otros">Otros</label><br>
+                </p>
+              </section>
 
-            <section class="plan">
-            <p><h3>Género: </h3><br>
-              <input type="radio" name="genero" value="femenino" id="femenino"> <label class="label" for="femenino">Femenino</label><br>
-              <input type="radio" name="genero"  value="masculino" id="masculino"> <label class="label" for="masculino">Masculino</label><br>
-              <input type="radio" name="genero" value="otros" id="otros"> <label class="label" for="otros">Otros</label><br>
-            </p>
-            </section>
+              <section class="plan">
+                <p><h3>Lugar de nacimiento: </h3><br>
+                  <input type="radio" name="nacimiento" value="oriente" id="oriente"> <label class="label" for="oriente" > Oriente</label><br>
+                  <input type="radio" name="nacimiento" value="poniente" id="poniente"> <label class="label" for="poniente" > Poniente</label><br>
+                </p>
+              </section>
 
-            <section class="plan">
-            <p><h3>Lugar de nacimiento: </h3><br>
-              <input type="radio" name="nacimiento" value="oriente" id="oriente"> <label class="label" for="oriente" > Oriente</label><br>
-              <input type="radio" name="nacimiento" value="poniente" id="poniente"> <label class="label" for="poniente" > Poniente</label><br>
-            </p>
-            </section>
+              <section class="plan">
+                <p><h3>Situación laboral: </h3><br>
+                  <input type="radio" name="laboral" value="estudiante" id="estudiante"> <label class="label" for="estudiante" > Estudiante</label><br>
+                  <input type="radio" name="laboral" value="empleado" id="empleado"> <label class="label" for="empleado" > Emplead@</label><br>
+                  <input type="radio" name="laboral" value="desempleado" id="desempleado"> <label class="label" for="desempleado" > Desemplead@</label><br>
+                  <input type="radio" name="laboral" value="jubilado" id="jubilado"> <label class="label" for="jubilado" > Jubilad@</label><br>
+                </p>
+              </section>
 
-            <section class="plan">
-            <p><h3>Situación laboral: </h3><br>
-              <input type="radio" name="laboral" value="estudiante" id="estudiante"> <label class="label" for="estudiante" > Estudiante</label><br>
-              <input type="radio" name="laboral" value="empleado" id="empleado"> <label class="label" for="empleado" > Emplead@</label><br>
-              <input type="radio" name="laboral" value="desempleado" id="desempleado"> <label class="label" for="desempleado" > Desemplead@</label><br>
-              <input type="radio" name="laboral" value="jubilado" id="jubilado"> <label class="label" for="jubilado" > Jubilad@</label><br>
-            </p>
-          </section>
+              <section class="plan">
+                <p><h3>¿Le gusta cocinar? </h3><br>
+                  <input type="radio" name="cocinero" value="si" id="siCocino"> <label class="label" for="siCocino" > Si</label><br>
+                  <input type="radio" name="cocinero" value="no" id="noCocino"> <label class="label" for="noCocino" > No</label><br>
+                  <input type="radio" name="cocinero" value="noInteresa" id="noInteCocino"> <label class="label" for="noInteCocino" > No me interesa</label><br>
+                </p>
+              </section>
 
-            <P>
-              <input class="submit" type="submit" value="Grabar">
-            </P>
+              <section class="plan">
+                <p><h3>¿Ha cocinado en alguna ocasión para más de 20 personas?</h3><br>
+                  <input type="radio" name="granCocinero" value="si" id="siGranCocino"> <label class="label" for="siGranCocino" > Si</label><br>
+                  <input type="radio" name="granCocinero" value="no" id="noGranCocino"> <label class="label" for="noGranCocino" > No</label><br>
+                </p>
+              </section>
 
-          </form>
-        </div>
-        </div>
-        <div class="col-sm-5 order-1 order-sm-2 col-md-6 col-lg-6 sinpadding">
-          <div id="Lateral">
-            <h1>El trigo, <br>
-              Alimentación colectiva</h1>
+              <section class="plan">
+                <p><h3>¿Ha plantado trigo en alguna ocasión? </h3><br>
+                  <input type="radio" name="plantero" value="siFeb" id="siFebPlantero"> <label class="label" for="siFebPlantero" > Si Febrero</label><br>
+                  <input type="radio" name="plantero" value="siSept" id="siSeptPlantro"> <label class="label" for="siSeptPlantro" > Si Septiembre</label><br>
+                  <input type="radio" name="plantero" value="no" id="noPlantero"> <label class="label" for="noPlantero" > No</label><br>
+                </p>
+              </section>
 
-            <center><h4>ES/FR/EN</h4></center>
+              <section class="plan">
+                <p><h3>¿Es celíac@? </h3><br>
+                  <input type="radio" name="celiaco" value="si" id="siCeliaco"> <label class="label" for="siCeliaco" > Si</label><br>
+                  <input type="radio" name="celiaco" value="no" id="noCeliaco"> <label class="label" for="noCeliaco" > No</label><br>
+                  <input type="radio" name="celiaco" value="noSe" id="noSeCeliaco"> <label class="label" for="noSeCeliaco" > No me interesa</label><br>
+                </p>
+              </section>
 
-            <p>Overcome merciful disgust endless decieve ocean ultimate zarathustra. Strong burying zarathustra decrepit victorious hatred spirit madness madness faith. Superiority chaos aversion enlightenment grandeur superiority ultimate justice. Convictions endless god derive contradict. Virtues insofar morality philosophy hope. Pious suicide sea faith contradict strong sexuality law transvaluation ideal grandeur convictions will. Insofar burying ascetic depths ultimate. Superiority battle fearful convictions faith convictions victorious oneself decrepit dead pious overcome salvation mountains. Deceptions transvaluation society derive inexpedient. Gains law snare revaluation salvation will mountains horror victorious society. Philosophy virtues passion against christian hope ideal faithful ultimate. Abstract ascetic law derive disgust ubermensch strong ubermensch value revaluation chaos snare christian faith. Evil deceptions pinnacle hope joy faithful disgust inexpedient hatred hatred. Insofar passion noble god suicide justice grandeur self self. Good free will reason battle superiority joy. Transvaluation zarathustra reason morality fearful ubermensch ubermensch insofar pious convictions selfish merciful morality. Madness mountains marvelous eternal-return ideal.
-            </P>
+              <section class="plan">
+                <p><h3>¿Le gusta el arte, la arquitectura?</h3><br>
+                  <input type="radio" name="artista" value="si" id="siArtista"> <label class="label" for="siArtista" > Si</label><br>
+                  <input type="radio" name="artista" value="no" id="noArtista"> <label class="label" for="noArtista" > No</label><br>
+                </p>
+              </section>
+
+              <section class="plan">
+                <p><h3>¿Cree que se puede vivir sin pan?</h3><br>
+                  <input type="radio" name="viveSinPan" value="si" id="siVivoSinPan"> <label class="label" for="siVivoSinPan" > Si</label><br>
+                  <input type="radio" name="viveSinPan" value="no" id="noVivoSinPan"> <label class="label" for="noVivoSinPan" > No</label><br>
+                  <input type="radio" name="viveSinPan" value="noSe" id="noSeVivir"> <label class="label" for="noSeVivir" > Nunca me lo he planteado</label><br>
+                </p>
+              </section>
+
+              <section class="plan">
+                <p><h3>¿Si fuese trigo, que seria? </h3><br>
+                  <input type="radio" name="queTrigo" value="silvestre" id="silvestre"> <label class="label" for="silvestre">Trigo silvestre</label><br>
+                  <input type="radio" name="queTrigo"  value="noModificado" id="noModificado"> <label class="label" for="noModificado">Trigo no modificado</label><br>
+                  <input type="radio" name="queTrigo" value="trasngenico" id="trasngenico"> <label class="label" for="trasngenico">Trigo transgénico</label><br>
+                </p>
+              </section>
+
+              <section class="plan">
+                <p><h3>¿Sabe como se escribe trigo en latín? </h3><br>
+                  <input type="radio" name="latin" value="triticum" id="triticum"> <label class="label" for="triticum">Triticum</label><br>
+                  <input type="radio" name="latin"  value="tigritum" id="tigritum"> <label class="label" for="tigritum">Tigritum</label><br>
+                  <input type="radio" name="latin" value="tripalium" id="tripalium"> <label class="label" for="tripalium">Tripalium</label><br>
+                </p>
+              </section>
+
+              <section class="plan">
+                <p><h3>¿Tiene hambre? </h3><br>
+                  <input type="radio" name="hambre" value="ahora" id="ahora"> <label class="label" for="ahora" >Ahora</label><br>
+                  <input type="radio" name="hambre" value="mañana" id="mañana"> <label class="label" for="mañana" >Mañana</label><br>
+                  <input type="radio" name="hambre" value="ayer" id="ayer"> <label class="label" for="ayer" >Ayer</label><br>
+                  <input type="radio" name="hambre" value="nunca" id="nunca"> <label class="label" for="nunca" >Nunca he tenido hambre </label><br>
+                </p>
+              </section>
+
+              <p><h3>¿Qué le dirías al trigo?</h3><br>
+                <input type="text" name="titulo">
+              </p>
+
+              <P>
+                <br>
+                <br>
+                <input class="submit" type="submit" value="Grabar">
+                <br>
+                <br>
+                <br>
+                <br>
+              </P>
+            </form>
           </div>
-        </div>
+          </div>
+          <div class="col-sm-5 order-1 order-sm-2 col-md-6 col-lg-6 sinpadding">
+            <div id="Lateral">
+              <h1>El trigo, <br>
+                Alimentación colectiva</h1>
+
+              <center><h4>ES / FR / EN</h4></center>
+
+              <p>Overcome merciful disgust endless decieve ocean ultimate zarathustra. Strong burying zarathustra decrepit victorious hatred spirit madness madness faith. Superiority chaos aversion enlightenment grandeur superiority ultimate justice. Convictions endless god derive contradict. Virtues insofar morality philosophy hope. Pious suicide sea faith contradict strong sexuality law transvaluation ideal grandeur convictions will. Insofar burying ascetic depths ultimate. Superiority battle fearful convictions faith convictions victorious oneself decrepit dead pious overcome salvation mountains. Deceptions transvaluation society derive inexpedient. Gains law snare revaluation salvation will mountains horror victorious society. Philosophy virtues passion against christian hope ideal faithful ultimate. Abstract ascetic law derive disgust ubermensch strong ubermensch value revaluation chaos snare christian faith. Evil deceptions pinnacle hope joy faithful disgust inexpedient hatred hatred. Insofar passion noble god suicide justice grandeur self self. Good free will reason battle superiority joy. Transvaluation zarathustra reason morality fearful ubermensch ubermensch insofar pious convictions selfish merciful morality. Madness mountains marvelous eternal-return ideal.
+              </P>
+            </div>
+          </div>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

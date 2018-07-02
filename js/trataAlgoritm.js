@@ -77,4 +77,9 @@ function trataAlgoritm (libro) {
   var restaDemas;
   var uniSumar;
 
+  const familia1 = 1/3;
+  const simbo1 = 1/5;
+  const poder1 = 1/6;
+  const tecno1 = 1/5;
+
 }

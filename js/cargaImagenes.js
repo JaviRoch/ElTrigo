@@ -1,5 +1,5 @@
 function cargaImagenes(page) {
-	console.log("en la función console log")
+	//console.log("En carga imagenes");
 	var doc = new jsPDF();
 	var page=[0,1,2];
 
@@ -33,8 +33,7 @@ function cargaImagenes(page) {
 			};
 			img.src = url;
 			return ret;
-		};
-
+		}
 
 		var createPage = function(imgData) {
 			doc.addImage(imgData, 'JPEG', 0, 0, 210, 297);
@@ -42,7 +41,10 @@ function cargaImagenes(page) {
 
 			doc.save('output.pdf');
 		}
-	for (var i = 0; i < 3; i++) {
-		getImageFromUrl('img/'+page[i]+'.jpg', createPage);
-	}
+
+		var longitudLibro = page.length;
+
+		for (var i = 0; i < longitudLibro; i++) {
+			getImageFromUrl('img/'+page[i]+'.jpeg', createPage);
+		}
 }

@@ -229,5 +229,43 @@
         "genero": "masculino",
         "nacimiento": "poniente",
         "laboral": "empleado"
+    },
+    {
+        "NLibro": 33,
+        "edad": "45",
+        "genero": "femenino",
+        "nacimiento": "poniente",
+        "laboral": "desempleado"
+    },
+    {
+        "NLibro": 34,
+        "edad": "45",
+        "genero": "femenino",
+        "nacimiento": "poniente",
+        "laboral": "desempleado"
+    },
+    {
+        "NLibro": 35,
+        "edad": "67",
+        "genero": "otros",
+        "nacimiento": "poniente",
+        "laboral": "desempleado"
+    },
+    {
+        "NLibro": 36,
+        "edad": "78",
+        "genero": "femenino",
+        "nacimiento": "poniente",
+        "laboral": "empleado",
+        "cocinero": "no",
+        "granCocinero": "si",
+        "plantero": "siFeb",
+        "celiaco": "noSe",
+        "artista": "si",
+        "viveSinPan": "no",
+        "queTrigo": "silvestre",
+        "latin": "triticum",
+        "hambre": "ahora",
+        "titulo": "try"
     }
 ]

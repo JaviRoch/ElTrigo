@@ -28,7 +28,11 @@ h3{
 .sinpadding [class*="col-"] {
     padding-left: 0;
 		padding-right: 0;
-		margin-bottom: -20px;
+}
+
+/*Relleno del color del lateral simulando misma altura de columnas*/
+.backgroundVerde{
+		background-color: #33ff00;
 }
 
 #Formulario{
@@ -97,7 +101,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /*Campo de texto*/
-input[type=trext] {
+input[type=text] {
   border: 2px solid #010101;
   border-radius: 0;
 	background-color: #a3a3a3;

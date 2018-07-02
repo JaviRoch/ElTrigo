@@ -20,6 +20,17 @@ try
      'genero'=> $_POST['genero'],
      'nacimiento'=> $_POST['nacimiento'],
      'laboral'=> $_POST['laboral'],
+     'cocinero'=> $_POST['cocinero'],
+     'granCocinero'=> $_POST['granCocinero'],
+     'plantero'=> $_POST['plantero'],
+     'celiaco'=> $_POST['celiaco'],
+     'artista'=> $_POST['artista'],
+     'viveSinPan'=> $_POST['viveSinPan'],
+     'queTrigo'=> $_POST['queTrigo'],
+     'latin'=> $_POST['latin'],
+     'hambre'=> $_POST['hambre'],
+
+     'titulo'=> $_POST['titulo'],
   );
 
   //Insertamos datos del formulario al array
@@ -31,7 +42,7 @@ try
 
   //wEscribimos los dato sen el archivo
   if(file_put_contents($myFile, $jsondata)) {
-       header("Location: creaLibro.html"); 
+       header("Location: creaLibro.html");
    }
   else
        echo "error al guardar datos";
