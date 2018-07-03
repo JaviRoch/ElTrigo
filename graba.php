@@ -29,7 +29,19 @@ try
      'queTrigo'=> $_POST['queTrigo'],
      'latin'=> $_POST['latin'],
      'hambre'=> $_POST['hambre'],
-
+     'comunista'=> $_POST['comunista'],
+     'fascista'=> $_POST['fascista'],
+     'virtual'=> $_POST['virtual'],
+     'ovnis'=> $_POST['ovnis'],
+     'basura'=> $_POST['basura'],
+     'sobras'=> $_POST['sobras'],
+     'tiraPan'=> $_POST['tiraPan'],
+     'flor'=> $_POST['flor'],
+     'etapaVida'=> $_POST['etapaVida'],
+     'lanzaPolitico'=> $_POST['lanzaPolitico'],
+     'comePanTrigo'=> $_POST['comePanTrigo'],
+     'alimentaSinPan'=> $_POST['alimentaSinPan'],
+     'cuandoCome'=> $_POST['cuandoCome'],
      'titulo'=> $_POST['titulo'],
   );
 

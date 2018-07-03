@@ -15,11 +15,6 @@ h1{
 	margin: 20px auto;
 }
 
-#Lateral h1{
-		font-family: 'Rubik Mono One', sans-serif;
-		font-size: 2.3rem;
-}
-
 h3{
 	padding-top: 30px;
 	text-decoration: underline;
@@ -49,6 +44,20 @@ h3{
 	font-family: 'Archivo Black', sans-serif;
 	font-size: 1.3rem;
 }
+
+#Lateral h1{
+		font-family: 'Rubik Mono One', sans-serif;
+		font-size: 2.3rem;
+}
+
+#Lateral a{
+		color: #333;
+}
+
+#Lateral a:hover{
+		color: #1F19FF;
+}
+
 
 /* FORM */
 
@@ -114,9 +123,9 @@ input[type=text] {
 	padding: 10px 50px;
 	display: inline-block;
 	border: none;
-	margin: 25px 0;
+	margin: 70px 0 90px;
 	background-color: #33ff00;
-	color: #ffffff;
+	color: #333;
 	font-size: 18px;
 		cursor: pointer;
 }
