@@ -1,8 +1,9 @@
 function cargaImagenes(page) {
-	//console.log("En carga imagenes");
 	var doc = new jsPDF();
 	var page=[0,1,2];
+	var paginaActual = 0;
 
+		//Función para extrer los datos de la imagen en binario
 		var getImageFromUrl = function(url, callback) {
 			var img = new Image(), data, ret = {
 				data: null,
@@ -27,7 +28,9 @@ function cargaImagenes(page) {
 
 				ret['data'] = data;
 				ret['pending'] = false;
+				//Comprobamos que createPage es una función
 				if (typeof callback === 'function') {
+					// Hacemos una llamada a la función createPage que hemos introducido como variable
 					callback(data);
 				}
 			};
@@ -35,16 +38,23 @@ function cargaImagenes(page) {
 			return ret;
 		}
 
+		//Función de creación de página de imagen
 		var createPage = function(imgData) {
 			doc.addImage(imgData, 'JPEG', 0, 0, 210, 297);
 			doc.addPage();
 
-			doc.save('output.pdf');
+			//Condicionamos la grabación a que esté en la última iteracción
+			paginaActual = paginaActual +1;
+			if(paginaActual === page.length){
+				doc.save('output.pdf');
+			}
 		}
-
 		var longitudLibro = page.length;
 
+
+		//Bucle pasando por todas las páginas
 		for (var i = 0; i < longitudLibro; i++) {
+			// Llamo a la función get Image para extraer el bruto de la imagen.
 			getImageFromUrl('img/'+page[i]+'.jpeg', createPage);
 		}
 }
