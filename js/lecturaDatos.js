@@ -29,12 +29,55 @@ function parseo (dat) {
 	libro.push(nacimiento);
 	var laboral = libros[ultimoLibro].laboral
 	libro.push(laboral);
+	var cocinero = libros[ultimoLibro].cocinero
+	libro.push(cocinero);
+	var granCocinero = libros[ultimoLibro].granCocinero
+	libro.push(granCocinero);
+	var plantero = libros[ultimoLibro].plantero
+	libro.push(plantero);
+	var celiaco = libros[ultimoLibro].celiaco
+	libro.push(celiaco);
+	var artista = libros[ultimoLibro].artista
+	libro.push(artista);
+	var viveSinPan = libros[ultimoLibro].viveSinPan
+	libro.push(viveSinPan);
+	var queTrigo = libros[ultimoLibro].queTrigo
+	libro.push(queTrigo);
+	var latin = libros[ultimoLibro].latin
+	libro.push(latin);
+	var hambre = libros[ultimoLibro].hambre
+	libro.push(hambre);
+	var comunista = libros[ultimoLibro].comunista
+	libro.push(comunista);
+	var fascista = libros[ultimoLibro].fascista
+	libro.push(fascista);
+	var virtual = libros[ultimoLibro].virtual
+	libro.push(virtual);
+	var ovnis = libros[ultimoLibro].ovnis
+	libro.push(ovnis);
+	var basura = libros[ultimoLibro].basura
+	libro.push(basura);
+	var sobras = libros[ultimoLibro].sobras
+	libro.push(sobras);
+	var tiraPan = libros[ultimoLibro].tiraPan
+	libro.push(tiraPan);
+	var flor = libros[ultimoLibro].flor
+	libro.push(flor);
+	var etapaVida = libros[ultimoLibro].etapaVida
+	libro.push(etapaVida);
+	var lanzaPolitico = libros[ultimoLibro].lanzaPolitico
+	libro.push(lanzaPolitico);
+	var comePanTrigo = libros[ultimoLibro].comePanTrigo
+	libro.push(comePanTrigo);
+	var alimentaSinPan = libros[ultimoLibro].alimentaSinPan
+	libro.push(alimentaSinPan);
+	var cuandoCome = libros[ultimoLibro].cuandoCome
+	libro.push(cuandoCome);
+	var titulo = libros[ultimoLibro].titulo
+	libro.push(titulo);
+	var autor = libros[ultimoLibro].autor
+	libro.push(autor);
 
 // Iniciamos función de tratamiento con variable del último libro
 	trataAlgoritm(libro);
-
-	var paginas =[0,1,2];
-
-//Llamamos a la función de creación de PDF con las páginas cargadas en la variable paginas
-	cargaImagenes(paginas);
 }

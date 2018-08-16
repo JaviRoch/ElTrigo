@@ -82,4 +82,12 @@ function trataAlgoritm (libro) {
   const poder1 = 1/6;
   const tecno1 = 1/5;
 
+  //Variable temporal con las páginas
+  var paginas =[0,1,2];
+
+  //Variable trasnferencia de Autor
+  var autor = libro[28];
+
+  //Llamamos a la función de creación de PDF con las páginas cargadas en la variable paginas
+  cargaImagenes(paginas,autor);
 }

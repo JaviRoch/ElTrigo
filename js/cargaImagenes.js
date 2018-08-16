@@ -1,9 +1,18 @@
-function cargaImagenes(page) {
+function cargaImagenes(page,autor) {
 	var doc = new jsPDF();
-	var page=[0,1,2];
+	//var page=[0,1,256,34,478,15,26,7,598,49,545,6,35,8,63,4,88,156,489,325,78,156,254,56];
 	var paginaActual = 0;
 
-		//Función para extrer los datos de la imagen en binario
+//Texto página de portada
+	doc.setFont("helvetica");
+	doc.setFontType("bold");
+	doc.setFontSize(22);
+	doc.text(105, 80, 'El Trigo: Alimentación Colectiva', null, null, 'center');
+	doc.setFontSize(12);
+	doc.text(200, 265, autor, null, null, 'right');
+	doc.addPage();
+
+		//Función para extraer los datos de la imagen en binario
 		var getImageFromUrl = function(url, callback) {
 			var img = new Image(), data, ret = {
 				data: null,

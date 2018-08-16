@@ -43,6 +43,7 @@ try
      'alimentaSinPan'=> $_POST['alimentaSinPan'],
      'cuandoCome'=> $_POST['cuandoCome'],
      'titulo'=> $_POST['titulo'],
+     'autor'=> $_POST['autor'],
   );
 
   //Insertamos datos del formulario al array

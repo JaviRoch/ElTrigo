@@ -20,12 +20,12 @@
             <form action="graba.php" method="POST" class="form cf">
 
               <p><h3>Edad: </h3><br>
-                <input type="number" name="edad">
+                <input type="number" name="edad" required>
               </p>
 
               <section class="plan">
                 <p><h3>Género: </h3><br>
-                  <input type="radio" name="genero" value="femenino" id="femenino"> <label class="label" for="femenino">Femenino</label><br>
+                  <input type="radio" name="genero" value="femenino" id="femenino" checked> <label class="label" for="femenino">Femenino</label><br>
                   <input type="radio" name="genero"  value="masculino" id="masculino"> <label class="label" for="masculino">Masculino</label><br>
                   <input type="radio" name="genero" value="otros" id="otros"> <label class="label" for="otros">Otros</label><br>
                 </p>
@@ -33,23 +33,23 @@
 
               <section class="plan">
                 <p><h3>Lugar de nacimiento: </h3><br>
-                  <input type="radio" name="nacimiento" value="oriente" id="oriente"> <label class="label" for="oriente" > Oriente</label><br>
-                  <input type="radio" name="nacimiento" value="poniente" id="poniente"> <label class="label" for="poniente" > Poniente</label><br>
+                  <input type="radio" name="nacimiento" value="oriente" id="oriente" checked> <label class="label" for="oriente" checked> Oriente</label><br>
+                  <input type="radio" name="nacimiento" value="poniente" id="poniente"> <label class="label" for="poniente"> Poniente</label><br>
                 </p>
               </section>
 
               <section class="plan">
                 <p><h3>Situación laboral: </h3><br>
-                  <input type="radio" name="laboral" value="estudiante" id="estudiante"> <label class="label" for="estudiante" > Estudiante</label><br>
+                  <input type="radio" name="laboral" value="estudiante" id="estudiante" checked> <label class="label" for="estudiante"  checked> Estudiante</label><br>
                   <input type="radio" name="laboral" value="empleado" id="empleado"> <label class="label" for="empleado" > Emplead@</label><br>
                   <input type="radio" name="laboral" value="desempleado" id="desempleado"> <label class="label" for="desempleado" > Desemplead@</label><br>
-                  <input type="radio" name="laboral" value="jubilado" id="jubilado"> <label class="label" for="jubilado" > Jubilad@</label><br>
+                  <input type="radio" name="laboral" value="jubilado" id="jubilado"> <label class="label" for="jubilado"> Jubilad@</label><br>
                 </p>
               </section>
 
               <section class="plan">
                 <p><h3>¿Le gusta cocinar? </h3><br>
-                  <input type="radio" name="cocinero" value="si" id="siCocino"> <label class="label" for="siCocino" > Si</label><br>
+                  <input type="radio" name="cocinero" value="si" id="siCocino" checked> <label class="label" for="siCocino"  checked> Si</label><br>
                   <input type="radio" name="cocinero" value="no" id="noCocino"> <label class="label" for="noCocino" > No</label><br>
                   <input type="radio" name="cocinero" value="noInteresa" id="noInteCocino"> <label class="label" for="noInteCocino" > No me interesa</label><br>
                 </p>
@@ -57,14 +57,14 @@
 
               <section class="plan">
                 <p><h3>¿Ha cocinado en alguna ocasión para más de 20 personas?</h3><br>
-                  <input type="radio" name="granCocinero" value="si" id="siGranCocino"> <label class="label" for="siGranCocino" > Si</label><br>
+                  <input type="radio" name="granCocinero" value="si" id="siGranCocino" checked> <label class="label" for="siGranCocino"  checked> Si</label><br>
                   <input type="radio" name="granCocinero" value="no" id="noGranCocino"> <label class="label" for="noGranCocino" > No</label><br>
                 </p>
               </section>
 
               <section class="plan">
                 <p><h3>¿Ha plantado trigo en alguna ocasión? </h3><br>
-                  <input type="radio" name="plantero" value="siFeb" id="siFebPlantero"> <label class="label" for="siFebPlantero" > Si Febrero</label><br>
+                  <input type="radio" name="plantero" value="siFeb" id="siFebPlantero" checked> <label class="label" for="siFebPlantero"  checked> Si Febrero</label><br>
                   <input type="radio" name="plantero" value="siSept" id="siSeptPlantro"> <label class="label" for="siSeptPlantro" > Si Septiembre</label><br>
                   <input type="radio" name="plantero" value="no" id="noPlantero"> <label class="label" for="noPlantero" > No</label><br>
                 </p>
@@ -72,7 +72,7 @@
 
               <section class="plan">
                 <p><h3>¿Es celíac@? </h3><br>
-                  <input type="radio" name="celiaco" value="si" id="siCeliaco"> <label class="label" for="siCeliaco" > Si</label><br>
+                  <input type="radio" name="celiaco" value="si" id="siCeliaco" checked> <label class="label" for="siCeliaco"  checked> Si</label><br>
                   <input type="radio" name="celiaco" value="no" id="noCeliaco"> <label class="label" for="noCeliaco" > No</label><br>
                   <input type="radio" name="celiaco" value="noSe" id="noSeCeliaco"> <label class="label" for="noSeCeliaco" > No me interesa</label><br>
                 </p>
@@ -80,14 +80,14 @@
 
               <section class="plan">
                 <p><h3>¿Le gusta el arte, la arquitectura?</h3><br>
-                  <input type="radio" name="artista" value="si" id="siArtista"> <label class="label" for="siArtista" > Si</label><br>
+                  <input type="radio" name="artista" value="si" id="siArtista" checked> <label class="label" for="siArtista"  checked> Si</label><br>
                   <input type="radio" name="artista" value="no" id="noArtista"> <label class="label" for="noArtista" > No</label><br>
                 </p>
               </section>
 
               <section class="plan">
                 <p><h3>¿Cree que se puede vivir sin pan?</h3><br>
-                  <input type="radio" name="viveSinPan" value="si" id="siVivoSinPan"> <label class="label" for="siVivoSinPan" > Si</label><br>
+                  <input type="radio" name="viveSinPan" value="si" id="siVivoSinPan" checked> <label class="label" for="siVivoSinPan"  checked> Si</label><br>
                   <input type="radio" name="viveSinPan" value="no" id="noVivoSinPan"> <label class="label" for="noVivoSinPan" > No</label><br>
                   <input type="radio" name="viveSinPan" value="noSe" id="noSeVivir"> <label class="label" for="noSeVivir" > Nunca me lo he planteado</label><br>
                 </p>
@@ -95,7 +95,7 @@
 
               <section class="plan">
                 <p><h3>¿Si fuese trigo, que seria? </h3><br>
-                  <input type="radio" name="queTrigo" value="silvestre" id="silvestre"> <label class="label" for="silvestre">Trigo silvestre</label><br>
+                  <input type="radio" name="queTrigo" value="silvestre" id="silvestre" checked> <label class="label" for="silvestre" checked>Trigo silvestre</label><br>
                   <input type="radio" name="queTrigo"  value="noModificado" id="noModificado"> <label class="label" for="noModificado">Trigo no modificado</label><br>
                   <input type="radio" name="queTrigo" value="trasngenico" id="trasngenico"> <label class="label" for="trasngenico">Trigo transgénico</label><br>
                 </p>
@@ -103,7 +103,7 @@
 
               <section class="plan">
                 <p><h3>¿Sabe como se escribe trigo en latín? </h3><br>
-                  <input type="radio" name="latin" value="triticum" id="triticum"> <label class="label" for="triticum">Triticum</label><br>
+                  <input type="radio" name="latin" value="triticum" id="triticum" checked> <label class="label" for="triticum" checked>Triticum</label><br>
                   <input type="radio" name="latin"  value="tigritum" id="tigritum"> <label class="label" for="tigritum">Tigritum</label><br>
                   <input type="radio" name="latin" value="tripalium" id="tripalium"> <label class="label" for="tripalium">Tripalium</label><br>
                 </p>
@@ -111,7 +111,7 @@
 
               <section class="plan">
                 <p><h3>¿Tiene hambre? </h3><br>
-                  <input type="radio" name="hambre" value="ahora" id="ahora"> <label class="label" for="ahora" >Ahora</label><br>
+                  <input type="radio" name="hambre" value="ahora" id="ahora" checked> <label class="label" for="ahora"  checked>Ahora</label><br>
                   <input type="radio" name="hambre" value="mañana" id="mañana"> <label class="label" for="mañana" >Mañana</label><br>
                   <input type="radio" name="hambre" value="ayer" id="ayer"> <label class="label" for="ayer" >Ayer</label><br>
                   <input type="radio" name="hambre" value="nunca" id="nunca"> <label class="label" for="nunca" >Nunca he tenido hambre </label><br>
@@ -120,7 +120,7 @@
 
               <section class="plan">
                 <p><h3>¿Es usted comunista?</h3><br>
-                  <input type="radio" name="comunista" value="si" id="siComunista"> <label class="label" for="siComunista" > Si</label><br>
+                  <input type="radio" name="comunista" value="si" id="siComunista" checked> <label class="label" for="siComunista"  checked> Si</label><br>
                   <input type="radio" name="comunista" value="no" id="noComunista"> <label class="label" for="noComunista" > No</label><br>
                   <input type="radio" name="comunista" value="noImporta" id="noImporComunista"> <label class="label" for="noImporComunista" > A usted que le importa</label><br>
                 </p>
@@ -128,7 +128,7 @@
 
               <section class="plan">
                 <p><h3>¿Es usted fascista?</h3><br>
-                  <input type="radio" name="fascista" value="si" id="siFascista"> <label class="label" for="siFascista" > Si</label><br>
+                  <input type="radio" name="fascista" value="si" id="siFascista" checked> <label class="label" for="siFascista"  checked> Si</label><br>
                   <input type="radio" name="fascista" value="no" id="noFascista"> <label class="label" for="noFascista" > No</label><br>
                   <input type="radio" name="fascista" value="noImporta" id="noImporFascista"> <label class="label" for="noImporFascista" > A usted que le importa</label><br>
                 </p>
@@ -136,28 +136,28 @@
 
               <section class="plan">
                 <p><h3>¿Cultiva trigo virtual?</h3><br>
-                  <input type="radio" name="virtual" value="si" id="siVirtual"> <label class="label" for="siVirtual" > Si</label><br>
+                  <input type="radio" name="virtual" value="si" id="siVirtual" checked> <label class="label" for="siVirtual"  checked> Si</label><br>
                   <input type="radio" name="virtual" value="no" id="noVirtual"> <label class="label" for="noVirtual" > No</label><br>
                 </p>
               </section>
 
               <section class="plan">
                 <p><h3>¿Ha visto ovnis?</h3><br>
-                  <input type="radio" name="ovnis" value="si" id="siOvnis"> <label class="label" for="siOvnis" > Si</label><br>
+                  <input type="radio" name="ovnis" value="si" id="siOvnis" checked> <label class="label" for="siOvnis"  checked> Si</label><br>
                   <input type="radio" name="ovnis" value="no" id="noOvnis"> <label class="label" for="noOvnis" > No</label><br>
                 </p>
               </section>
 
               <section class="plan">
                 <p><h3>¿Tira comida a la basura?</h3><br>
-                  <input type="radio" name="basura" value="si" id="siBasura"> <label class="label" for="siBasura" > Si</label><br>
+                  <input type="radio" name="basura" value="si" id="siBasura" checked> <label class="label" for="siBasura"  checked> Si</label><br>
                   <input type="radio" name="basura" value="no" id="noBasura"> <label class="label" for="noBasura" > No</label><br>
                 </p>
               </section>
 
               <section class="plan">
                 <p><h3>¿Qué hace con el pan que le sobra?</h3><br>
-                  <input type="radio" name="sobras" value="perdido" id="sobraPerdido"> <label class="label" for="sobraPerdido" > Pan perdido</label><br>
+                  <input type="radio" name="sobras" value="perdido" id="sobraPerdido" checked> <label class="label" for="sobraPerdido"  checked> Pan perdido</label><br>
                   <input type="radio" name="sobras" value="rayado" id="sobraRayado"> <label class="label" for="sobraRayado" > Pan rayado</label><br>
                   <input type="radio" name="sobras" value="ajo" id="sobraAjo"> <label class="label" for="sobraAjo" > Sopa de ajo</label><br>
                 </p>
@@ -165,7 +165,7 @@
 
               <section class="plan">
                 <p><h3>¿Que cree que sucede cuando alguien tira el pan?</h3><br>
-                  <input type="radio" name="tiraPan" value="llora" id="tiraLlorar"> <label class="label" for="tiraLlorar" > El niño Jesús llora</label><br>
+                  <input type="radio" name="tiraPan" value="llora" id="tiraLlorar" checked> <label class="label" for="tiraLlorar"  checked> El niño Jesús llora</label><br>
                   <input type="radio" name="tiraPan" value="alegra" id="tiraAlegrar"> <label class="label" for="tiraAlegrar" > El Diablo se alegra</label><br>
                   <input type="radio" name="tiraPan" value="nada" id="tiraNada"> <label class="label" for="tiraNada" > Nada, aunque no he entiendo la pregunta</label><br>
                 </p>
@@ -173,7 +173,7 @@
 
               <section class="plan">
                 <p><h3>¿Hay alguna flor que le ha domesticado?</h3><br>
-                  <input type="radio" name="flor" value="posible" id="florPosible"> <label class="label" for="florPosible" > Es posible</label><br>
+                  <input type="radio" name="flor" value="posible" id="florPosible" checked> <label class="label" for="florPosible"  checked> Es posible</label><br>
                   <input type="radio" name="flor" value="tierra" id="florTierra"> <label class="label" for="florTierra" > En la Tierra</label><br>
                   <input type="radio" name="flor" value="" id="florOtroPlaneta"> <label class="label" for="florOtroPlaneta" > En otro planeta</label><br>
                 </p>
@@ -181,7 +181,7 @@
 
               <section class="plan">
                 <p><h3>¿En que etapa de su vida está?</h3><br>
-                  <input type="radio" name="etapaVida" value="semilla" id="etapaSemilla"> <label class="label" for="etapaSemilla" >Semilla</label><br>
+                  <input type="radio" name="etapaVida" value="semilla" id="etapaSemilla" checked> <label class="label" for="etapaSemilla"  checked>Semilla</label><br>
                   <input type="radio" name="etapaVida" value="cultivo" id="etapaCultivo"> <label class="label" for="etapaCultivo" >Cultivo</label><br>
                   <input type="radio" name="etapaVida" value="recogida" id="etapaRecogida"> <label class="label" for="etapaRecogida" >Recogida</label><br>
                   <input type="radio" name="etapaVida" value="transformacion" id="etapaTransforma"> <label class="label" for="etapaTransforma" >Transformación </label><br>
@@ -191,7 +191,7 @@
 
               <section class="plan">
                 <p><h3>¿Qué lanzaría a un/a polític@ que le ha decepcionado?</h3><br>
-                  <input type="radio" name="lanzaPolitico" value="Harina" id="lanzaHarina"> <label class="label" for="lanzaHarina" >Harina</label><br>
+                  <input type="radio" name="lanzaPolitico" value="Harina" id="lanzaHarina" checked> <label class="label" for="lanzaHarina"  checked>Harina</label><br>
                   <input type="radio" name="lanzaPolitico" value="Pan duro" id="lanzaDuro"> <label class="label" for="lanzaDuro" >Pan duro</label><br>
                   <input type="radio" name="lanzaPolitico" value="Torrijas" id="lanzaTorrija"> <label class="label" for="lanzaTorrija" >Torrijas</label><br>
                 </p>
@@ -199,21 +199,21 @@
 
               <section class="plan">
                 <p><h3>¿Le gusta comer pan de trigo?</h3><br>
-                  <input type="radio" name="comePanTrigo" value="si" id="siCome"> <label class="label" for="siCome" > Si</label><br>
+                  <input type="radio" name="comePanTrigo" value="si" id="siCome" checked> <label class="label" for="siCome"  checked> Si</label><br>
                   <input type="radio" name="comePanTrigo" value="no" id="noCome"> <label class="label" for="noCome" > No</label><br>
                 </p>
               </section>
 
               <section class="plan">
                 <p><h3>¿Puede imaginarse su alimentación diaria sin necesidad de pan?</h3><br>
-                  <input type="radio" name="alimentaSinPan" value="si" id="siImagina"> <label class="label" for="siImagina" > Si</label><br>
+                  <input type="radio" name="alimentaSinPan" value="si" id="siImagina" checked> <label class="label" for="siImagina"  checked> Si</label><br>
                   <input type="radio" name="alimentaSinPan" value="no" id="noImagina"> <label class="label" for="noImagina" > No</label><br>
                 </p>
               </section>
 
               <section class="plan">
                 <p><h3>¿Cuándo come usted pan?</h3><br>
-                  <input type="radio" name="cuandoCome" value="desayuno" id="comeDesayuno"> <label class="label" for="comeDesayuno" >Desayuno</label><br>
+                  <input type="radio" name="cuandoCome" value="desayuno" id="comeDesayuno" checked> <label class="label" for="comeDesayuno"  checked>Desayuno</label><br>
                   <input type="radio" name="cuandoCome" value="almuerzo" id="comeAlmuerzo"> <label class="label" for="comeAlmuerzo" >Almuerzo</label><br>
                   <input type="radio" name="cuandoCome" value="cena" id="comeCena"> <label class="label" for="comeCena" >Cena</label><br>
                   <input type="radio" name="cuandoCome" value="entre" id="comeEntre"> <label class="label" for="comeEntre" >Entre comidas</label><br>
@@ -222,11 +222,15 @@
               </section>
 
               <p><h3>¿Qué le diría al trigo?</h3><br>
-                <input type="text" name="titulo">
+                <input type="text" name="titulo" maxlength="40" required>
+              </p>
+
+              <p><h3>¿Su nombre?</h3><br>
+                <input type="text" name="autor" value="Anonimo">
               </p>
 
               <P>
-                <input class="submit" type="submit" value="Grabar">
+                <input class="submit" type="submit" value="Crear libro">
               </P>
             </form>
           </div>
