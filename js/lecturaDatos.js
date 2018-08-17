@@ -73,10 +73,13 @@ function parseo (dat) {
 	libro.push(alimentaSinPan);
 	var cuandoCome = libros[ultimoLibro].cuandoCome
 	libro.push(cuandoCome);
+	var confirma = libros[ultimoLibro].confirma
+	libro.push(confirma);
 	var titulo = libros[ultimoLibro].titulo
 	libro.push(titulo);
 	var autor = libros[ultimoLibro].autor
 	libro.push(autor);
+
 
 // Iniciamos función de tratamiento con variable del último libro
 	trataAlgoritm(libro);

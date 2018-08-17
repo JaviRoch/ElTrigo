@@ -1,4 +1,4 @@
-function cargaImagenes(page,autor) {
+function cargaImagenes(page,numLib,autor,titulo) {
 	var doc = new jsPDF();
 	//var page=[0,1,256,34,478,15,26,7,598,49,545,6,35,8,63,4,88,156,489,325,78,156,254,56];
 	var paginaActual = 0;
@@ -7,7 +7,7 @@ function cargaImagenes(page,autor) {
 	doc.setFont("helvetica");
 	doc.setFontType("bold");
 	doc.setFontSize(22);
-	doc.text(105, 80, 'El Trigo: Alimentación Colectiva', null, null, 'center');
+	doc.text(105, 80, titulo, null, null, 'center');
 	doc.setFontSize(12);
 	doc.text(200, 265, autor, null, null, 'right');
 	doc.addPage();
@@ -55,7 +55,13 @@ function cargaImagenes(page,autor) {
 			//Condicionamos la grabación a que esté en la última iteracción
 			paginaActual = paginaActual +1;
 			if(paginaActual === page.length){
-				doc.save('output.pdf');
+				//Textos de última página
+				doc.setFont("helvetica");
+				doc.setFontType("bold");
+				doc.setFontSize(12);
+				doc.text(200, 265, "Libro Nº "+numLib, null, null, 'right');
+				//Guardamos el libro
+				doc.save(titulo + '.pdf');
 			}
 		}
 		var longitudLibro = page.length;

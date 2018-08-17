@@ -1,0 +1,38 @@
+//Variables de número de páginas por carpeta con carga inicial de valores
+
+Simbolismo
+  CultPo = 6;
+  Lite = 4;
+  Cine = 2;
+  Arte = 8;
+  Reli = 5;
+
+Poder
+  Econo = 6;
+  Terri = 4;
+  Guerra = 5;
+  Poli = 5;
+  Orien = 5;
+  Ponien = 5;
+
+Tecnologia
+  Indus = 5;
+  Gen = 7;
+  Norma = 2;
+  Excede = 3;
+  EnferTri = 6;
+
+Familia
+  AlbumFam = 7;
+  Rece = 5;
+  EnferPer = 5;
+
+Civilizacion
+  Antigu = 7;
+  Virtu = 3;
+  Mujer = 5;
+
+  Otro = 5;
+
+  Simbolismo
+    CultPo,Lite,Cine,Arte,Reli,Econo,Terri,Guerra,Poli,Orien,Ponien,Indus,Gen,Norma,Excede,EnferTri,AlbumFam,Rece,EnferPer,Antigu,Virtu,Mujer,Otro,

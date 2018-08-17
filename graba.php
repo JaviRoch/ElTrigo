@@ -42,6 +42,7 @@ try
      'comePanTrigo'=> $_POST['comePanTrigo'],
      'alimentaSinPan'=> $_POST['alimentaSinPan'],
      'cuandoCome'=> $_POST['cuandoCome'],
+     'confirma'=> $_POST['confirma'],
      'titulo'=> $_POST['titulo'],
      'autor'=> $_POST['autor'],
   );
