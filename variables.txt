@@ -7,14 +7,6 @@ Simbolismo
   Arte = 8;
   Reli = 5;
 
-Poder
-  Econo = 6;
-  Terri = 4;
-  Guerra = 5;
-  Poli = 5;
-  Orien = 5;
-  Ponien = 5;
-
 Tecnologia
   Indus = 5;
   Gen = 7;
@@ -26,6 +18,14 @@ Familia
   AlbumFam = 7;
   Rece = 5;
   EnferPer = 5;
+
+Poder
+    Econo = 6;
+    Terri = 4;
+    Guerra = 5;
+    Poli = 5;
+    Orien = 5;
+    Ponien = 5;
 
 Civilizacion
   Antigu = 7;

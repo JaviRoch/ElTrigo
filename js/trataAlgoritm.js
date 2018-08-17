@@ -36,11 +36,11 @@ function trataAlgoritm (libro) {
   var OrienMax =  999;
   var PonienMax =  1099;
   var IndusMax =  1199;
-  var GuenMax = 1299;
+  var GenMax = 1299;
   var NormaMax =  1399;
   var ExcedeMax =  1499;
   var EnferTriMax =  1599;
-  var AbumFamMax =  1699;
+  var AlbumFamMax =  1699;
   var EnferPerMax =  1799;
   var ReceMax =  1899;
   var AntiguMax =  1999;
@@ -90,6 +90,8 @@ function trataAlgoritm (libro) {
   const tecno3 = 3/5;
   const civi1 = 1/3;
   const civi3 = 3/3;
+
+//Creamos los algoritmos de cada pregunta del formulario
 
   /*Edad
     0-18        +1
@@ -855,8 +857,52 @@ En otro planeta
     restaAlResto(uniSuma);
   }
 
+  //Seleccionamos las fotografías de cada carpeta según resultados del algoritmo
+  paginas =[];
+/*
+  for(var i = 0; i<CultPo;i++){
+    var pagTemp = Math.floor((Math.random()*CultPoMax)+CultPoMin);
+    console.log("Cultura popular aleatorio "+pagTemp);
+    paginas.push(pagTemp);
+    console.log("Array de paginas "+paginas);
+  }*/
+
+  aleatoriPaginas(CultPo,CultPoMax,CultPoMin);
+  aleatoriPaginas(Lite,LiteMax,LiteMin);
+  aleatoriPaginas(Cine,CineMax,CineMin);
+  aleatoriPaginas(Arte,ArteMax,ArteMin);
+  aleatoriPaginas(Reli,ReliMax,ReliMin);
+  aleatoriPaginas(Indus,IndusMax,IndusMin);
+  aleatoriPaginas(Gen,GenMax,GenMin);
+  aleatoriPaginas(Norma,NormaMax,NormaMin);
+  aleatoriPaginas(Excede,ExcedeMax,ExcedeMin);
+  aleatoriPaginas(EnferTri,EnferTriMax,EnferTriMin);
+  aleatoriPaginas(AlbumFam,AlbumFamMax,AlbumFamMin);
+  aleatoriPaginas(Rece,ReceMax,ReceMin);
+  aleatoriPaginas(EnferPer,EnferPerMax,EnferPerMin);
+  aleatoriPaginas(Econo,EconoMax,EconoMin);
+  aleatoriPaginas(Terri,TerriMax,TerriMin);
+  aleatoriPaginas(Guerra,GuerraMax,GuerraMin);
+  aleatoriPaginas(Poli,PoliMax,PoliMin);
+  aleatoriPaginas(Orien,OrienMax,OrienMin);
+  aleatoriPaginas(Ponien,PonienMax,PonienMin);
+  aleatoriPaginas(Antigu,AntiguMax,AntiguMin);
+  aleatoriPaginas(Virtu,VirtuMax,VirtuMin);
+  aleatoriPaginas(Mujer,MujerMax,MujerMin);
+  aleatoriPaginas(Otro,OtroMax,OtroMin);
+
+  function aleatoriPaginas(variable,max,min){
+    console.log("Cambio de carpeta, min "+min+" max "+max)
+    for(var i = 0; i<variable;i++){
+      var pagTemp = Math.round(Math.random()*(max-min)+parseInt(min));
+      console.log("Cultura popular aleatorio "+pagTemp);
+      paginas.push(pagTemp);
+      console.log("Array de paginas "+paginas);
+    }
+  }
+
   //Variable temporal con las páginas
-  var paginas =[0,1,2];
+  //var paginas =[0,1,2];
 
 //console.log("Despues de modifica "+ CultPo,Lite,Cine,Arte,Reli,Econo,Terri,Guerra,Poli,Orien,Ponien,Indus,Gen,Norma,Excede,EnferTri,AlbumFam,Rece,EnferPer,Antigu,Virtu,Mujer,Otro);
 
