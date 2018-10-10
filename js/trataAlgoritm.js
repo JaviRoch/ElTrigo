@@ -1,7 +1,7 @@
 function trataAlgoritm (libro) {
 
 //Cargamos valores de unidades de páginas en variables
-  var CultPoMin = 0;
+  var CultPoMin = 0; //al 3
   var LiteMin = 100;
   var CineMin = 200;
   var ArteMin = 300;
@@ -24,29 +24,37 @@ function trataAlgoritm (libro) {
   var VirtuMin = 2000;
   var MujerMin = 2100;
   var OtroMin = 2200;
-  var CultPoMax =  99;
-  var LiteMax =  199;
-  var CineMax =  299;
-  var ArteMax =  399;
-  var ReliMax =  499;
-  var EconoMax =  599;
-  var TerriMax =  699;
-  var GuerraMax =  799;
-  var PoliMax =  899;
-  var OrienMax =  999;
-  var PonienMax =  1099;
-  var IndusMax =  1199;
-  var GenMax = 1299;
-  var NormaMax =  1399;
-  var ExcedeMax =  1499;
-  var EnferTriMax =  1599;
-  var AlbumFamMax =  1699;
-  var EnferPerMax =  1799;
-  var ReceMax =  1899;
-  var AntiguMax =  1999;
-  var VirtuMax =  2099;
-  var MujerMax =  2199;
-  var OtroMax =  2299;
+  var ProducMin = 2300; //añadir algoritmo
+  var SimboPonMin = 2400; //añadir
+  var SimboOriMin = 2500; // añadir
+  var CiviOtras = 2600; //añadir
+  var CultPoMax =  10;
+  var LiteMax =  110;
+  var CineMax =  210;
+  var ArteMax =  310;
+  var ReliMax =  410;
+  var EconoMax =  510;
+  var TerriMax =  610;
+  var GuerraMax =  710;
+  var PoliMax =  810;
+  var OrienMax =  910;
+  var PonienMax =  1010;
+  var IndusMax =  1110;
+  var GenMax = 1210;
+  var NormaMax =  1310;
+  var ExcedeMax =  1410;
+  var EnferTriMax =  1510;
+  var AlbumFamMax =  1610;
+  var EnferPerMax =  1710;
+  var ReceMax =  1810;
+  var AntiguMax =  1910;
+  var VirtuMax =  2010;
+  var MujerMax =  2110;
+  var OtroMax =  2210;
+  var ProducMax = 2399; //añadir algoritmo
+  var SimboPonMax = 2499; //añadir
+  var SimboOriMax = 2599; // añadir
+  var CiviOtras = 2699; //añadir
 
 //Variables de número de páginas por carpeta con carga inicial de valores
   CultPo = 7;
@@ -895,9 +903,17 @@ En otro planeta
     console.log("Cambio de carpeta, min "+min+" max "+max)
     for(var i = 0; i<variable;i++){
       var pagTemp = Math.round(Math.random()*(max-min)+parseInt(min));
-      console.log("Cultura popular aleatorio "+pagTemp);
-      paginas.push(pagTemp);
-      console.log("Array de paginas "+paginas);
+      console.log("For "+pagTemp);
+      if(paginas.indexOf(pagTemp) === -1){
+        paginas.push(pagTemp);
+        console.log("Array de paginas "+paginas);
+      }
+      else if(paginas.indexOf(pagTemp) > -1){
+        variable = variable-1;
+        console.log("if variable "+variable + "pagTemp "+pagTemp);
+        console.log("Array de paginas "+paginas);
+
+      }
     }
   }
 
