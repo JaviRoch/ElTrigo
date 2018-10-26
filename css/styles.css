@@ -25,29 +25,43 @@ h3{
 		padding-right: 0;
 }
 
+.pielogos{
+		background-color: #32F616;
+}
+
+.contPielogos{
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
 /*Relleno del color del lateral simulando misma altura de columnas*/
 .backgroundVerde{
 		background-color: #ecf110;
+
 }
 
 #Formulario{
 	background-color: #a3a3a3;
 	padding: 7px 6% 0 6%;
-	font-family: 'Archivo Black', sans-serif;
+	/*font-family: 'Archivo Black', sans-serif;*/
+	font-family: 'Karla', sans-serif;
 	font-size: 1.3rem;
+	margin-bottom: -16px;
 }
 
 #Lateral{
 	background-color: #ecf110;
 	text-align: justify;
 	padding: 50px 6% 0 6%;
-	font-family: 'Archivo Black', sans-serif;
+	/*font-family: 'Archivo Black', sans-serif;*/
+	font-family: 'Karla', sans-serif;
 	font-size: 1.3rem;
 }
 
 #Lateral h1{
-		font-family: 'Rubik Mono One', sans-serif;
-		font-size: 2.3rem;
+		/*font-family: 'Rubik Mono One', sans-serif;*/
+		font-family: 'Montserrat', sans-serif;
+		font-size: 3rem;
 }
 
 #Lateral a{

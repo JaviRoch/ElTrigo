@@ -36,3 +36,4 @@ Civilizacion
 
   Simbolismo
     CultPo,Lite,Cine,Arte,Reli,Econo,Terri,Guerra,Poli,Orien,Ponien,Indus,Gen,Norma,Excede,EnferTri,AlbumFam,Rece,EnferPer,Antigu,Virtu,Mujer,Otro,
+    

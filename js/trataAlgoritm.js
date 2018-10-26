@@ -24,10 +24,10 @@ function trataAlgoritm (libro) {
   var VirtuMin = 2000;
   var MujerMin = 2100;
   var OtroMin = 2200;
-  var ProducMin = 2300; //añadir algoritmo
-  var SimboPonMin = 2400; //añadir
-  var SimboOriMin = 2500; // añadir
-  var CiviOtras = 2600; //añadir
+  var ProducMin = 2300;
+  var SimboPonMin = 2400;
+  var SimboOriMin = 2500;
+  var CiviOtrasMin = 2600;
   var CultPoMax =  10;
   var LiteMax =  110;
   var CineMax =  210;
@@ -35,50 +35,54 @@ function trataAlgoritm (libro) {
   var ReliMax =  410;
   var EconoMax =  510;
   var TerriMax =  610;
-  var GuerraMax =  710;
+  var GuerraMax =  713;
   var PoliMax =  810;
   var OrienMax =  910;
   var PonienMax =  1010;
-  var IndusMax =  1110;
-  var GenMax = 1210;
+  var IndusMax =  1113;
+  var GenMax = 1214;
   var NormaMax =  1310;
-  var ExcedeMax =  1410;
+  var ExcedeMax =  1414;
   var EnferTriMax =  1510;
   var AlbumFamMax =  1610;
   var EnferPerMax =  1710;
-  var ReceMax =  1810;
+  var ReceMax =  1839;
   var AntiguMax =  1910;
   var VirtuMax =  2010;
   var MujerMax =  2110;
-  var OtroMax =  2210;
-  var ProducMax = 2399; //añadir algoritmo
-  var SimboPonMax = 2499; //añadir
-  var SimboOriMax = 2599; // añadir
-  var CiviOtras = 2699; //añadir
+  var OtroMax =  2220;
+  var ProducMax = 2307;
+  var SimboPonMax = 2414;
+  var SimboOriMax = 2502;
+  var CiviOtrasMax = 2606;
 
 //Variables de número de páginas por carpeta con carga inicial de valores
-  CultPo = 7;
-  Lite = 4;
-  Cine = 2;
-  Arte = 8;
-  Reli = 5;
-  Econo = 6;
-  Terri = 3;
-  Guerra = 6;
-  Poli = 6;
-  Orien = 4;
-  Ponien = 4;
-  Indus = 6;
-  Gen = 7;
+  CultPo = 6;
+  Lite = 3;
+  Cine = 1;
+  Arte = 7;
+  Reli = 4;
+  SimboPon = 3;
+  SimboOri = 3;
+  Econo = 5;
+  Terri = 2;
+  Guerra = 5;
+  Poli = 5;
+  Orien = 3;
+  Ponien = 3;
+  Indus = 5;
+  Gen = 6;
   Norma = 1;
-  Excede = 3;
-  EnferTri = 6;
-  AlbumFam = 8;
-  Rece = 4;
-  EnferPer = 5;
-  Antigu = 8;
-  Virtu = 3;
-  Mujer = 5;
+  Excede = 2;
+  EnferTri = 5;
+  Producto = 4;
+  AlbumFam = 7;
+  Rece = 3;
+  EnferPer = 4;
+  Antigu = 7;
+  Virtu = 2;
+  Mujer = 4;
+  CiviOtras = 2;
   Otro = 3;
 
   //console.log("Valor inicial "+ CultPo,Lite,Cine,Arte,Reli,Econo,Terri,Guerra,Poli,Orien,Ponien,Indus,Gen,Norma,Excede,EnferTri,AlbumFam,Rece,EnferPer,Antigu,Virtu,Mujer,Otro);
@@ -880,11 +884,14 @@ En otro planeta
   aleatoriPaginas(Cine,CineMax,CineMin);
   aleatoriPaginas(Arte,ArteMax,ArteMin);
   aleatoriPaginas(Reli,ReliMax,ReliMin);
+  aleatoriPaginas(SimboPon,SimboPonMax,SimboPonMin);
+  aleatoriPaginas(SimboOri,SimboOriMax,SimboOriMin);
   aleatoriPaginas(Indus,IndusMax,IndusMin);
   aleatoriPaginas(Gen,GenMax,GenMin);
   aleatoriPaginas(Norma,NormaMax,NormaMin);
   aleatoriPaginas(Excede,ExcedeMax,ExcedeMin);
   aleatoriPaginas(EnferTri,EnferTriMax,EnferTriMin);
+  aleatoriPaginas(Producto,ProducMax,ProducMin);
   aleatoriPaginas(AlbumFam,AlbumFamMax,AlbumFamMin);
   aleatoriPaginas(Rece,ReceMax,ReceMin);
   aleatoriPaginas(EnferPer,EnferPerMax,EnferPerMin);
@@ -897,21 +904,22 @@ En otro planeta
   aleatoriPaginas(Antigu,AntiguMax,AntiguMin);
   aleatoriPaginas(Virtu,VirtuMax,VirtuMin);
   aleatoriPaginas(Mujer,MujerMax,MujerMin);
+  aleatoriPaginas(CiviOtras,CiviOtrasMax,CiviOtrasMin);
   aleatoriPaginas(Otro,OtroMax,OtroMin);
 
   function aleatoriPaginas(variable,max,min){
-    console.log("Cambio de carpeta, min "+min+" max "+max)
+    //console.log("Cambio de carpeta, min "+min+" max "+max)
     for(var i = 0; i<variable;i++){
       var pagTemp = Math.round(Math.random()*(max-min)+parseInt(min));
-      console.log("For "+pagTemp);
+      //console.log("For "+pagTemp);
       if(paginas.indexOf(pagTemp) === -1){
         paginas.push(pagTemp);
-        console.log("Array de paginas "+paginas);
+        //console.log("Array de paginas "+paginas);
       }
       else if(paginas.indexOf(pagTemp) > -1){
         variable = variable-1;
-        console.log("if variable "+variable + "pagTemp "+pagTemp);
-        console.log("Array de paginas "+paginas);
+        //console.log("if variable "+variable + "pagTemp "+pagTemp);
+        //console.log("Array de paginas "+paginas);
 
       }
     }
