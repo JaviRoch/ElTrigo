@@ -96,14 +96,15 @@ function cargaImagenes(page,numLib,autor,titulo) {
 				doc.text(20,comListado+(interlineado*5),"Camila Kevorkian");
 				doc.text(20,comListado+(interlineado*6),"Carlos Colás");
 				doc.text(20,comListado+(interlineado*7),"Christian Robles");
-				doc.text(20,comListado+(interlineado*8),"Cristina Sieso");
-				doc.text(20,comListado+(interlineado*9),"Elba Haxel");
-				doc.text(20,comListado+(interlineado*10),"Javier Roche");
-				doc.text(20,comListado+(interlineado*11),"José Garrido");
-				doc.text(20,comListado+(interlineado*12),"Laura Cailloux");
-				doc.text(20,comListado+(interlineado*13),"Marta Sanchez");
-				doc.text(20,comListado+(interlineado*14),"Merce Torres");
-				doc.text(20,comListado+(interlineado*15),"Rohan Tapa");
+				doc.text(20,comListado+(interlineado*8),"Cintia Sarria");
+				doc.text(20,comListado+(interlineado*9),"Cristina Sieso");
+				doc.text(20,comListado+(interlineado*10),"Elba Haxel");
+				doc.text(20,comListado+(interlineado*11),"Javier Roche");
+				doc.text(20,comListado+(interlineado*12),"José Garrido");
+				doc.text(20,comListado+(interlineado*13),"Laura Cailloux");
+				doc.text(20,comListado+(interlineado*14),"Marta Sanchez");
+				doc.text(20,comListado+(interlineado*15),"Merce Torres");
+				doc.text(20,comListado+(interlineado*16),"Rohan Tapa");
 
 				doc.setFontType("bold");
 				doc.setTextColor(150);
@@ -146,28 +147,28 @@ function cargaImagenes(page,numLib,autor,titulo) {
 
 				doc.setFontType("bold");
 				doc.setTextColor(150);
-				doc.text(20,comListado+(interlineado*17),"Aplicación web:");
+				doc.text(20,comListado+(interlineado*18),"Aplicación web:");
 				doc.setFontType("normal");
 				doc.setTextColor(0, 0, 0);
-				doc.text(20,comListado+(interlineado*18),"eltrigoalimentacioncolectiva.org");
-				doc.text(20,comListado+(interlineado*19),"github.com/JaviRoch/ElTrigo");
+				doc.text(20,comListado+(interlineado*19),"eltrigoalimentacioncolectiva.org");
+				doc.text(20,comListado+(interlineado*20),"github.com/JaviRoch/ElTrigo");
 				doc.setFontType("bold");
 				doc.setTextColor(150);
-				doc.text(20,comListado+(interlineado*21),"Blog:");
+				doc.text(20,comListado+(interlineado*22),"Blog:");
 				doc.setFontType("normal");
 				doc.setTextColor(0, 0, 0);
-				doc.text(20,comListado+(interlineado*22),"eltrigoalimentacioncolectiva.tumblr.com");
+				doc.text(20,comListado+(interlineado*23),"eltrigoalimentacioncolectiva.tumblr.com");
 				doc.setFontType("bold");
 				doc.setTextColor(150);
-				doc.text(20,comListado+(interlineado*24),"Instagram:");
+				doc.text(20,comListado+(interlineado*25),"Instagram:");
 				doc.setFontType("normal");
 				doc.setTextColor(0, 0, 0);
-				doc.text(20,comListado+(interlineado*25),"instagram.com/eltrigoalimentacioncolectiva");
+				doc.text(20,comListado+(interlineado*26),"instagram.com/eltrigoalimentacioncolectiva");
 
 
 				var texto3 = "Las fotografías utilizadas en esta publicación son de las creadoras, de bancos de imágenes o extraidas de la WWW.";
 				var parrafo3 = doc.splitTextToSize(texto3, (210-lMargin-rMargin));
-				doc.text(lMargin, comListado+(interlineado*27), parrafo3);
+				doc.text(lMargin, comListado+(interlineado*28), parrafo3);
 
 				doc.text(190, 265, "Libro Nº "+numLib,null,null,"right");
 				//Guardamos el libro
