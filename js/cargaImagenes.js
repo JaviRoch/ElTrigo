@@ -19,7 +19,6 @@ function cargaImagenes(page,numLib,autor,titulo) {
 				document.body.appendChild(canvas);
 				canvas.width = 2100;
 				canvas.height = 2970;
-
 				var ctx = canvas.getContext('2d');
 				ctx.drawImage(img, 0, 0);
 				// Grab the image as a jpeg encoded in base64, but only the data
@@ -27,7 +26,6 @@ function cargaImagenes(page,numLib,autor,titulo) {
 				// Convert the data to binary form
 				data = atob(data);
 				document.body.removeChild(canvas);
-
 				ret['data'] = data;
 				ret['pending'] = false;
 				//Comprobamos que createPage es una función
@@ -62,8 +60,69 @@ function cargaImagenes(page,numLib,autor,titulo) {
 				//Textos de última página
 				doc.setFont("helvetica");
 				doc.setFontType("bold");
-				doc.setFontSize(12);
+				doc.setFontSize(16);
+				doc.setTextColor(150);
+				doc.text(20, 30, "El Trigo, Alimentación Colectiva", null, null,);
+				doc.setFont("helvetica");
+				doc.setFontType("normal");
+				doc.setFontSize(13);
 				doc.setTextColor(0, 0, 0);
+				var lMargin=20; //margen izquierdo
+				var rMargin=20; //Margen derecho
+				var texto1 = "Taller de trabajo colaborativo para la creación, autoedición y difusión de una publi- cación sobre el Trigo en Harinera ZGZ. Nuestro punto de partida fue el 9 de febrero de 2018 junto a 15 participantes que durante 1 año inventarán un jeroglífico visual de este cereal en su ciclo completo: semilla, cultivo, recogida, transformación y ela- boración para el consumo.";
+				var parrafo1 = doc.splitTextToSize(texto1, (210-lMargin-rMargin));
+				doc.text(lMargin, 45, parrafo1);
+				var texto2 = "Esta publicación ha sido creada por (autor)…";
+				var parrafo2 = doc.splitTextToSize(texto2, (210-lMargin-rMargin));
+				doc.text(lMargin, 75, parrafo2);
+				doc.setFontSize(11);
+				var comListado = 85;
+				var interlineado = 5;
+				doc.setFontType("bold");
+				doc.setTextColor(150);
+				doc.text(20,comListado,"Guía:");
+				doc.setFontType("normal");
+				doc.setTextColor(0, 0, 0);
+				doc.text(20,comListado+interlineado,"Julián Barón");
+				doc.setFontType("bold");
+				doc.setTextColor(150);
+				doc.text(20,comListado+(interlineado*3),"Creadores/as:");
+				doc.setFontType("normal");
+				doc.setTextColor(0, 0, 0);
+				doc.text(20,comListado+(interlineado*4),"Alba Cano");
+				doc.text(20,comListado+(interlineado*5),"Camila Kevorkian");
+				doc.text(20,comListado+(interlineado*6),"Carlos Colás");
+				doc.text(20,comListado+(interlineado*7),"Christian Robles");
+				doc.text(20,comListado+(interlineado*8),"Cristina Sieso");
+				doc.text(20,comListado+(interlineado*9),"Elba Haxel");
+				doc.text(20,comListado+(interlineado*10),"Javier Roche");
+				doc.text(20,comListado+(interlineado*11),"José Garrido");
+				doc.text(20,comListado+(interlineado*12),"Laura Cailloux");
+				doc.text(20,comListado+(interlineado*13),"Marta Sanchez");
+				doc.text(20,comListado+(interlineado*14),"Merce Torres");
+				doc.text(20,comListado+(interlineado*15),"Rohan Tapa");
+				doc.setFontType("bold");
+				doc.setTextColor(150);
+				doc.text(20,comListado+(interlineado*17),"Invitad@s:");
+				doc.setFontType("normal");
+				doc.setTextColor(0, 0, 0);
+				doc.text(20,comListado+(interlineado*18),"Ana Marcén");
+				doc.text(20,comListado+(interlineado*19),"Beatríz Navarra");
+				doc.text(20,comListado+(interlineado*20),"Fermín Serrano");
+				doc.text(20,comListado+(interlineado*21),"Javier Ortiz-Echagüe");
+				doc.text(20,comListado+(interlineado*22),"Sofía Guillén");
+				doc.setFontType("bold");
+				doc.setTextColor(150);
+				doc.text(20,comListado+(interlineado*24),"Diseño y programación web:");
+				doc.setFontType("normal");
+				doc.setTextColor(0, 0, 0);
+				doc.text(20,comListado+(interlineado*25),"Javier Roche");
+				doc.setFontType("bold");
+				doc.setTextColor(150);
+				doc.text(20,comListado+(interlineado*27),"Autor/a:");
+				doc.setFontType("normal");
+				doc.setTextColor(0, 0, 0);
+				doc.text(20,comListado+(interlineado*28),autor);
 				doc.text(200, 265, "Libro Nº "+numLib, null, null, 'right');
 				//Guardamos el libro
 				doc.save(titulo + '.pdf');
