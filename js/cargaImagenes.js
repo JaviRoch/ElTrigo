@@ -70,11 +70,11 @@ function cargaImagenes(page,numLib,autor,titulo) {
 				var lMargin=20; //margen izquierdo
 				var rMargin=20; //Margen derecho
 
-				var texto1 = "Taller de trabajo colaborativo para la creación, autoedición y difusión de una publi- cación sobre el Trigo en Harinera ZGZ. Nuestro punto de partida fue el 9 de febrero de 2018 junto a 15 participantes que durante 1 año inventarán un jeroglífico visual de este cereal en su ciclo completo: semilla, cultivo, recogida, transformación y ela- boración para el consumo.";
+				var texto1 = "Taller de trabajo colaborativo para la creación, autoedición y difusión de una publi- cación sobre el Trigo en Harinera ZGZ. Nuestro trabajo comenzó el 9 de febrero de 2018. Desde entonces, los 15 participantes han inventado un jeroglífico visual sobre este cereal en su ciclo completo: semilla, cultivo, recogida, transformación y elaboración para el consumo.";
 				var parrafo1 = doc.splitTextToSize(texto1, (210-lMargin-rMargin));
 				doc.text(lMargin, 45, parrafo1);
 
-				var texto2 = "Esta publicación ha sido creada en una aplicación web en la que conociendo a través de un formulario la relación de el/la autor/a con el trigo, se genera una publi- cación presonalizada a modo de receta.";
+				var texto2 = "Esta publicación se ha creado a través del formulario de una aplicación web que recoge diferentes datos sobre la relación de él/la autor/a con el trigo. A partir de esta información se genera una publicación personalizada a modo de receta.";
 				var parrafo2 = doc.splitTextToSize(texto2, (210-lMargin-rMargin));
 				doc.text(lMargin, 75, parrafo2);
 

@@ -28,62 +28,62 @@ function trataAlgoritm (libro) {
   var SimboPonMin = 2400;
   var SimboOriMin = 2500;
   var CiviOtrasMin = 2600;
-  var CultPoMax =  10;
-  var LiteMax =  110;
+  var CultPoMax =  20;
+  var LiteMax =  123;
   var CineMax =  210;
-  var ArteMax =  310;
-  var ReliMax =  410;
+  var ArteMax =  320;
+  var ReliMax =  420;
   var EconoMax =  510;
   var TerriMax =  610;
-  var GuerraMax =  713;
+  var GuerraMax =  741;
   var PoliMax =  810;
   var OrienMax =  910;
   var PonienMax =  1010;
-  var IndusMax =  1113;
-  var GenMax = 1214;
+  var IndusMax =  1126;
+  var GenMax = 1218;
   var NormaMax =  1310;
-  var ExcedeMax =  1414;
-  var EnferTriMax =  1510;
+  var ExcedeMax =  1415;
+  var EnferTriMax =  1515;
   var AlbumFamMax =  1610;
   var EnferPerMax =  1710;
-  var ReceMax =  1839;
+  var ReceMax =  1843;
   var AntiguMax =  1910;
   var VirtuMax =  2010;
   var MujerMax =  2110;
   var OtroMax =  2220;
-  var ProducMax = 2307;
+  var ProducMax = 2320;
   var SimboPonMax = 2414;
   var SimboOriMax = 2502;
-  var CiviOtrasMax = 2606;
+  var CiviOtrasMax = 2607;
 
 //Variables de número de páginas por carpeta con carga inicial de valores
-  CultPo = 6;
+  CultPo = 4;
   Lite = 3;
   Cine = 1;
-  Arte = 7;
-  Reli = 4;
-  SimboPon = 3;
-  SimboOri = 3;
-  Econo = 5;
-  Terri = 2;
-  Guerra = 5;
-  Poli = 5;
-  Orien = 3;
-  Ponien = 3;
+  Arte = 6;
+  Reli = 3;
+  SimboPon = 2;
+  SimboOri = 2;
+  Econo = 4;
+  Terri = 1;
+  Guerra = 6;
+  Poli = 3;
+  Orien = 2;
+  Ponien = 2;
   Indus = 5;
-  Gen = 6;
+  Gen = 4;
   Norma = 1;
   Excede = 2;
-  EnferTri = 5;
+  EnferTri = 4;
   Producto = 4;
-  AlbumFam = 7;
-  Rece = 3;
-  EnferPer = 4;
-  Antigu = 7;
+  AlbumFam = 6;
+  Rece = 2;
+  EnferPer = 2;
+  Antigu = 6;
   Virtu = 2;
   Mujer = 4;
   CiviOtras = 2;
-  Otro = 3;
+  Otro = 6;
 
   //console.log("Valor inicial "+ CultPo,Lite,Cine,Arte,Reli,Econo,Terri,Guerra,Poli,Orien,Ponien,Indus,Gen,Norma,Excede,EnferTri,AlbumFam,Rece,EnferPer,Antigu,Virtu,Mujer,Otro);
 
@@ -908,17 +908,18 @@ En otro planeta
   aleatoriPaginas(Otro,OtroMax,OtroMin);
 
   function aleatoriPaginas(variable,max,min){
-    //console.log("Cambio de carpeta, min "+min+" max "+max)
+    console.log("Cambio de carpeta "+"variable "+variable+ " min "+min+" max "+max)
     for(var i = 0; i<variable;i++){
       var pagTemp = Math.round(Math.random()*(max-min)+parseInt(min));
-      //console.log("For "+pagTemp);
+      console.log("Iteracción "+i);
+      //console.log("Sección "+variable+" Max "+ max+ " Min "+ min);
       if(paginas.indexOf(pagTemp) === -1){
         paginas.push(pagTemp);
-        //console.log("Array de paginas "+paginas);
+        console.log("Array de paginas "+paginas);
       }
       else if(paginas.indexOf(pagTemp) > -1){
-        variable = variable-1;
-        //console.log("if variable "+variable + "pagTemp "+pagTemp);
+        i = i-1;
+        console.log("if I "+i + "pagTemp "+pagTemp);
         //console.log("Array de paginas "+paginas);
 
       }
