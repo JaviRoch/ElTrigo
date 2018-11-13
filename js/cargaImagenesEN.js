@@ -62,7 +62,7 @@ function cargaImagenes(page,numLib,autor,titulo) {
 				doc.setFontType("bold");
 				doc.setFontSize(16);
 				doc.setTextColor(150);
-				doc.text(20, 30, "El Trigo, Alimentación Colectiva", null, null,);
+				doc.text(20, 30, "Wheat, Collective Feeding", null, null,);
 				doc.setFont("helvetica");
 				doc.setFontType("normal");
 				doc.setFontSize(13);
@@ -70,11 +70,11 @@ function cargaImagenes(page,numLib,autor,titulo) {
 				var lMargin=20; //margen izquierdo
 				var rMargin=20; //Margen derecho
 
-				var texto1 = "Taller de trabajo colaborativo para la creación, autoedición y difusión de una publi- cación sobre el Trigo en Harinera ZGZ. Nuestro trabajo comenzó el 9 de febrero de 2018. Desde entonces, los 15 participantes han inventado un jeroglífico visual sobre este cereal en su ciclo completo: semilla, cultivo, recogida, transformación y elaboración para el consumo.";
+				var texto1 = "A collaborative workshop to create, self-publish and disseminate a publication about wheat at Harinera ZGZ. Our work started on February 9, 2018. Since then, the 15 participants have constructed a visual imagery about this cereal and its full cycle: seed, crop, harvesting, processing and preparation for consumption.";
 				var parrafo1 = doc.splitTextToSize(texto1, (210-lMargin-rMargin));
 				doc.text(lMargin, 45, parrafo1);
 
-				var texto2 = "Esta publicación se ha creado a través del formulario de una aplicación web que recoge diferentes datos sobre la relación de él/la autor/a con el trigo. A partir de esta información se genera una publicación personalizada a modo de receta.";
+				var texto2 = "This publication has been created through a web application that collects different data considering the relation of the author with wheat. From this information a customised publication is generated like a recipe (or prescription).";
 				var parrafo2 = doc.splitTextToSize(texto2, (210-lMargin-rMargin));
 				doc.text(lMargin, 75, parrafo2);
 
@@ -83,13 +83,13 @@ function cargaImagenes(page,numLib,autor,titulo) {
 				var interlineado = 5;
 				doc.setFontType("bold");
 				doc.setTextColor(150);
-				doc.text(20,comListado,"Guía:");
+				doc.text(20,comListado,"Guide:");
 				doc.setFontType("normal");
 				doc.setTextColor(0, 0, 0);
 				doc.text(20,comListado+interlineado,"Julián Barón");
 				doc.setFontType("bold");
 				doc.setTextColor(150);
-				doc.text(20,comListado+(interlineado*3),"Creadoras/es:");
+				doc.text(20,comListado+(interlineado*3),"Creators:");
 				doc.setFontType("normal");
 				doc.setTextColor(0, 0, 0);
 				doc.text(20,comListado+(interlineado*4),"Alba Cano");
@@ -103,13 +103,13 @@ function cargaImagenes(page,numLib,autor,titulo) {
 				doc.text(20,comListado+(interlineado*12),"Jorge Isla");
 				doc.text(20,comListado+(interlineado*13),"José Garrido");
 				doc.text(20,comListado+(interlineado*14),"Laura Cailloux");
-				doc.text(20,comListado+(interlineado*15),"Marta Sanchez");
-				doc.text(20,comListado+(interlineado*16),"Merce Torres");
-				doc.text(20,comListado+(interlineado*17),"Rohan Tapa");
+				doc.text(20,comListado+(interlineado*15),"Marta Sánchez");
+				doc.text(20,comListado+(interlineado*16),"Mercè Torres");
+				doc.text(20,comListado+(interlineado*17),"Rohan Thapa");
 
 				doc.setFontType("bold");
 				doc.setTextColor(150);
-				doc.text(75,comListado+(interlineado*3),"Invitadas/os:");
+				doc.text(75,comListado+(interlineado*3),"Guests:");
 				doc.setFontType("normal");
 				doc.setTextColor(0, 0, 0);
 				doc.text(75,comListado+(interlineado*4),"Ana Marcén");
@@ -119,20 +119,20 @@ function cargaImagenes(page,numLib,autor,titulo) {
 				doc.text(75,comListado+(interlineado*8),"Sofía Guillén");
 				doc.setFontType("bold");
 				doc.setTextColor(150);
-				doc.text(75,comListado+(interlineado*10),"Diseño y programación web:");
+				doc.text(75,comListado+(interlineado*10),"Web design and programming:");
 				doc.setFontType("normal");
 				doc.setTextColor(0, 0, 0);
 				doc.text(75,comListado+(interlineado*11),"Javier Roche");
 				doc.setFontType("bold");
 				doc.setTextColor(150);
-				doc.text(75,comListado+(interlineado*13),"Autora/or:");
+				doc.text(75,comListado+(interlineado*13),"Author:");
 				doc.setFontType("normal");
 				doc.setTextColor(0, 0, 0);
 				doc.text(75,comListado+(interlineado*14),autor);
 
 				doc.setFontType("bold");
 				doc.setTextColor(150);
-				doc.text(140,comListado+(interlineado*3),"Organizado:");
+				doc.text(140,comListado+(interlineado*3),"Organized by:");
 				doc.setFontType("normal");
 				doc.setTextColor(0, 0, 0);
 				doc.text(140,comListado+(interlineado*4),"Ayuntamiento de Zaragoza");
@@ -140,7 +140,7 @@ function cargaImagenes(page,numLib,autor,titulo) {
 				doc.text(140,comListado+(interlineado*6),"Colectivo Llámalo H");
 				doc.setFontType("bold");
 				doc.setTextColor(150);
-				doc.text(140,comListado+(interlineado*8),"Patrocinado:");
+				doc.text(140,comListado+(interlineado*8),"Sponsored by:");
 				doc.setFontType("normal");
 				doc.setTextColor(0, 0, 0);
 				doc.text(140,comListado+(interlineado*9),"Aramac");
@@ -148,7 +148,7 @@ function cargaImagenes(page,numLib,autor,titulo) {
 
 				doc.setFontType("bold");
 				doc.setTextColor(150);
-				doc.text(20,comListado+(interlineado*19),"Aplicación web:");
+				doc.text(20,comListado+(interlineado*19),"Web APP:");
 				doc.setFontType("normal");
 				doc.setTextColor(0, 0, 0);
 				doc.text(20,comListado+(interlineado*20),"eltrigoalimentacioncolectiva.org");
@@ -165,19 +165,18 @@ function cargaImagenes(page,numLib,autor,titulo) {
 				doc.setFontType("normal");
 				doc.setTextColor(0, 0, 0);
 				doc.text(20,comListado+(interlineado*27),"instagram.com/eltrigoalimentacioncolectiva");
-				doc.setFontType("bold");
-				doc.setTextColor(150);
-				doc.text(20,comListado+(interlineado*29),"Youtube:");
-				doc.setFontType("normal");
-				doc.setTextColor(0, 0, 0);
-				doc.text(20,comListado+(interlineado*30),"goo.gl/UhieS1");
+        doc.setFontType("bold");
+        doc.setTextColor(150);
+        doc.text(20,comListado+(interlineado*29),"Youtube:");
+        doc.setFontType("normal");
+        doc.setTextColor(0, 0, 0);
+        doc.text(20,comListado+(interlineado*30),"goo.gl/UhieS1");
 
-
-				var texto3 = "Las fotografías utilizadas en esta publicación son de las creadoras, de bancos de imágenes o extraidas de la WWW.";
+				var texto3 = "The images used in this publication are from the creators, donations of personal archives, picture libraries or sourced from the WWW.";
 				var parrafo3 = doc.splitTextToSize(texto3, (210-lMargin-rMargin));
 				doc.text(lMargin, comListado+(interlineado*32), parrafo3);
 
-				doc.text(190, 275, "Libro Nº "+numLib,null,null,"right");
+				doc.text(190, 275, "Book Nº "+numLib,null,null,"right");
 				//Guardamos el libro
 				doc.save(titulo + '.pdf');
 			}
