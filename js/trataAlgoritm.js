@@ -28,44 +28,44 @@ function trataAlgoritm (libro) {
   var SimboPonMin = 2400;
   var SimboOriMin = 2500;
   var CiviOtrasMin = 2600;
-  var CultPoMax =  20;
-  var LiteMax =  123;
-  var CineMax =  210;
-  var ArteMax =  320;
-  var ReliMax =  420;
-  var EconoMax =  510;
-  var TerriMax =  610;
-  var GuerraMax =  741;
-  var PoliMax =  810;
-  var OrienMax =  910;
-  var PonienMax =  1010;
-  var IndusMax =  1126;
-  var GenMax = 1218;
-  var NormaMax =  1310;
-  var ExcedeMax =  1415;
-  var EnferTriMax =  1515;
-  var AlbumFamMax =  1610;
-  var EnferPerMax =  1710;
-  var ReceMax =  1843;
-  var AntiguMax =  1910;
-  var VirtuMax =  2010;
-  var MujerMax =  2110;
-  var OtroMax =  2220;
-  var ProducMax = 2320;
-  var SimboPonMax = 2414;
-  var SimboOriMax = 2502;
-  var CiviOtrasMax = 2607;
+  var CultPoMax =  34;
+  var LiteMax =  141;
+  var CineMax =  248;
+  var ArteMax =  333;
+  var ReliMax =  426;
+  var EconoMax =  519;
+  var TerriMax =  649;
+  var GuerraMax =  752;
+  var PoliMax =  819;
+  var OrienMax =  918;
+  var PonienMax =  1017;
+  var IndusMax =  1148;
+  var GenMax = 1241;
+  var NormaMax =  1309;
+  var ExcedeMax =  1425;
+  var EnferTriMax =  1532;
+  var AlbumFamMax =  1634;
+  var EnferPerMax =  1712;
+  var ReceMax =  1858;
+  var AntiguMax =  1922;
+  var VirtuMax =  2020;
+  var MujerMax =  2124;
+  var OtroMax =  2235;
+  var ProducMax = 2340;
+  var SimboPonMax = 2416;
+  var SimboOriMax = 2511;
+  var CiviOtrasMax = 2617;
 
 //Variables de número de páginas por carpeta con carga inicial de valores
-  CultPo = 4;
-  Lite = 3;
+  CultPo = 3;
+  Lite = 2;
   Cine = 1;
   Arte = 6;
-  Reli = 3;
+  Reli = 2;
   SimboPon = 2;
   SimboOri = 2;
-  Econo = 4;
-  Terri = 1;
+  Econo = 2;
+  Terri = 2;
   Guerra = 6;
   Poli = 3;
   Orien = 2;
@@ -74,16 +74,17 @@ function trataAlgoritm (libro) {
   Gen = 4;
   Norma = 1;
   Excede = 2;
-  EnferTri = 4;
+  EnferTri = 3;
   Producto = 4;
   AlbumFam = 6;
-  Rece = 2;
+  Rece = 1;
   EnferPer = 2;
-  Antigu = 6;
+  Antigu = 5;
   Virtu = 2;
   Mujer = 4;
   CiviOtras = 2;
-  Otro = 6;
+  Otro = 5;
+  Guarda = 2;
 
   //console.log("Valor inicial "+ CultPo,Lite,Cine,Arte,Reli,Econo,Terri,Guerra,Poli,Orien,Ponien,Indus,Gen,Norma,Excede,EnferTri,AlbumFam,Rece,EnferPer,Antigu,Virtu,Mujer,Otro);
 
@@ -908,20 +909,21 @@ En otro planeta
   aleatoriPaginas(Otro,OtroMax,OtroMin);
 
   function aleatoriPaginas(variable,max,min){
-    console.log("Cambio de carpeta "+"variable "+variable+ " min "+min+" max "+max)
+    variable = Math.trunc(variable);
+    //console.log("Cambio de carpeta "+"variable "+variable+ " min "+min+" max "+max);
     for(var i = 0; i<variable;i++){
       var pagTemp = Math.round(Math.random()*(max-min)+parseInt(min));
-      console.log("Iteracción "+i);
+      //console.log("Iteracción "+i);
       //console.log("Sección "+variable+" Max "+ max+ " Min "+ min);
+      //Función para evitar la repetición de páginas
       if(paginas.indexOf(pagTemp) === -1){
         paginas.push(pagTemp);
-        console.log("Array de paginas "+paginas);
+        //console.log("Array de paginas "+paginas);
       }
       else if(paginas.indexOf(pagTemp) > -1){
         i = i-1;
-        console.log("if I "+i + "pagTemp "+pagTemp);
+        //console.log("if I "+i + "pagTemp "+pagTemp);
         //console.log("Array de paginas "+paginas);
-
       }
     }
   }
@@ -936,18 +938,42 @@ En otro planeta
   var autor = libro[29];
   var titulo = libro[28];
 
+  //Variables índice Libro
+  var indice  = [];
+
+  indice [1] = Math.trunc(CultPo + Arte + Cine + Lite + Reli); //200 gr. de simbolismo
+  indice [2] = Math.trunc(Guerra);  //2 tazas de guerra
+  indice [3] = Math.trunc(EnferTri); //1 vaso de hambre
+  indice [4] =  Math.trunc(Econo);  //2 cucharaditas de ideología
+  indice [5] =  Math.trunc(Otro); // 3 huevos
+  indice [6] =  Math.trunc(Arte); // Una pizca de arte, al gusto
+  indice [7] =  Math.trunc(Cine + Mujer); // 200 mililitros de cine y revolución
+  indice [8] =  Math.trunc(Producto); // 2 espigas de trigo
+  indice [9] =  Math.trunc(AlbumFam); // 6 dientes de familia
+  indice [10] = Math.trunc(Excede); // 4 litros de cerveza
+  // Suficiente agua
+  indice [11] =  Math.trunc(Antigu); // 4 civilizaciones medianas
+  indice [12] =  Math.trunc(Gen); // 1 moño de trigo transgénico
+  indice [13] =  Math.trunc(CultPo); // 1 cucharada de cultura popular
+  indice [14] =  Math.trunc(Poli); // 2 docenas de políticos en harina
+  indice [15] =  Math.trunc(Producto); // 1 libra de harina para preparar pócima
+  indice [16] =  Math.trunc(Guerra); // 1 batalla por el trigo, picada
+  // Tecnología diluida al gusto
+
   //Llamamos a la función de creación de PDF con las páginas cargadas en la variable paginas
-  cargaImagenes(paginas,numLib,autor,titulo);
+  cargaImagenes(paginas,numLib,autor,titulo,indice);
 }
 
 //Función en la que restamos las unidades que hemos sumado al resto de variables
 function restaAlResto(uniSuma){
-  var uniResta = uniSuma/23;
+  var uniResta = uniSuma/27;
   CultPo = CultPo - uniResta;
   Lite = Lite- uniResta;
   Cine = Cine - uniResta;
   Arte = Arte - uniResta;
   Reli = Reli - uniResta;
+  SimboPon = SimboPon - uniResta;
+  SimboOri = SimboOri - uniResta;
   Econo = Econo - uniResta;
   Terri = Terri - uniResta;
   Guerra = Guerra - uniResta;
@@ -959,11 +985,13 @@ function restaAlResto(uniSuma){
   Norma = Norma - uniResta;
   Excede = Excede - uniResta;
   EnferTri = EnferTri - uniResta;
+  Producto = Producto - uniResta;
   AlbumFam = AlbumFam - uniResta;
   Rece = Rece - uniResta;
   EnferPer = EnferPer - uniResta;
   Antigu = Antigu - uniResta;
   Virtu = Virtu - uniResta;
   Mujer = Mujer - uniResta;
+  CiviOtras = CiviOtras - uniResta;
   Otro = Otro - uniResta;
 }

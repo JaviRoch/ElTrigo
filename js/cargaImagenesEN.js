@@ -1,4 +1,4 @@
-function cargaImagenes(page,numLib,autor,titulo) {
+function cargaImagenes(page,numLib,autor,titulo,indice) {
 	var doc = new jsPDF();
 	//var page=[0,1,256,34,478,15,26,7,598,49,545,6,35,8,63,4,88,156,489,325,78,156,254,56];
 	var paginaActual = 0;
@@ -117,6 +117,7 @@ function cargaImagenes(page,numLib,autor,titulo) {
 				doc.text(75,comListado+(interlineado*6),"Fermín Serrano");
 				doc.text(75,comListado+(interlineado*7),"Javier Ortiz-Echagüe");
 				doc.text(75,comListado+(interlineado*8),"Sofía Guillén");
+				doc.text(75,comListado+(interlineado*9),"Cristina Sánchez");
 				doc.setFontType("bold");
 				doc.setTextColor(150);
 				doc.text(75,comListado+(interlineado*10),"Web design and programming:");
