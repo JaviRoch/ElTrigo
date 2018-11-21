@@ -68,10 +68,12 @@ function cargaImagenes(page,numLib,autor,titulo,indice) {
 
 			//Condicionamos la grabación a que esté en la última iteracción
 			paginaActual = paginaActual +1;
-			//console.log("Página actual  "+paginaActual);
-			//console.log("Longitud array page " +page.length);
-			if(paginaActual === (page.length-1)){
-				//console.log("Función última página");
+			console.log("Página actual  "+paginaActual);
+			console.log("Longitud del libro " +page.length);
+			if(paginaActual === (page.length-3)){
+				doc.addPage();
+				doc.addPage();
+				console.log("Función última página");
 				//Textos de última página
 				doc.setFont("helvetica");
 				doc.setFontType("bold");
@@ -118,9 +120,9 @@ function cargaImagenes(page,numLib,autor,titulo,indice) {
 				doc.text(20,comListado+(interlineado*12),"Jorge Isla");
 				doc.text(20,comListado+(interlineado*13),"José Garrido");
 				doc.text(20,comListado+(interlineado*14),"Laura Cailloux");
-				doc.text(20,comListado+(interlineado*15),"Marta Sanchez");
-				doc.text(20,comListado+(interlineado*16),"Merce Torres");
-				doc.text(20,comListado+(interlineado*17),"Rohan Tapa");
+				doc.text(20,comListado+(interlineado*15),"Marta Sánchez");
+				doc.text(20,comListado+(interlineado*16),"Mercè Torres");
+				doc.text(20,comListado+(interlineado*17),"Rohan Thapa");
 
 				doc.setFontType("bold");
 				doc.setTextColor(150);
@@ -135,16 +137,16 @@ function cargaImagenes(page,numLib,autor,titulo,indice) {
 				doc.text(75,comListado+(interlineado*9),"Cristina Sánchez");
 				doc.setFontType("bold");
 				doc.setTextColor(150);
-				doc.text(75,comListado+(interlineado*10),"Diseño y programación web:");
+				doc.text(75,comListado+(interlineado*11),"Diseño y programación web:");
 				doc.setFontType("normal");
 				doc.setTextColor(0, 0, 0);
-				doc.text(75,comListado+(interlineado*11),"Javier Roche");
+				doc.text(75,comListado+(interlineado*12),"Javier Roche");
 				doc.setFontType("bold");
 				doc.setTextColor(150);
-				doc.text(75,comListado+(interlineado*13),"Autora/or:");
+				doc.text(75,comListado+(interlineado*14),"Autora/or:");
 				doc.setFontType("normal");
 				doc.setTextColor(0, 0, 0);
-				doc.text(75,comListado+(interlineado*14),autor);
+				doc.text(75,comListado+(interlineado*15),autor);
 
 				doc.setFontType("bold");
 				doc.setTextColor(150);
@@ -209,6 +211,7 @@ function cargaImagenes(page,numLib,autor,titulo,indice) {
 			doc.setFontSize(12);
 			doc.text(200, 265, autor, null, null, 'right');
 			doc.addPage();
+			doc.addPage();
 
 		//Texto página indice
 			doc.setFont("helvetica");
@@ -220,22 +223,98 @@ function cargaImagenes(page,numLib,autor,titulo,indice) {
 			var interIndice = 8;
 			doc.setFontSize(14);
 			doc.text(105, posIndice, indice[1]+"00 gr. de simbolismo", null, null, 'center');
-			doc.text(105, posIndice+interIndice, indice[2]+" tazas de guerra", null, null, 'center');
-			doc.text(105, posIndice+(2*interIndice), indice[3]+" vasos de hambre", null, null, 'center');
-			doc.text(105, posIndice+(3*interIndice), indice[4]+" cucharaditas de ideología", null, null, 'center');
-			doc.text(105, posIndice+(4*interIndice), indice[5]+" huevos", null, null, 'center');
-			doc.text(105, posIndice+(5*interIndice), indice[6]+" pizcas de arte", null, null, 'center');
+			//Condicionamos el singular y el plural
+			if(indice[2] === 1){
+				doc.text(105, posIndice+interIndice, indice[2]+" taza de guerra", null, null, 'center');
+			}
+			else if(indice[2] != 1){
+				doc.text(105, posIndice+interIndice, indice[2]+" tazas de guerra", null, null, 'center');
+			}
+			if(indice[3] === 1){
+				doc.text(105, posIndice+(2*interIndice), indice[3]+" vaso de hambre", null, null, 'center');
+			}
+			else if(indice[3] != 1){
+				doc.text(105, posIndice+(2*interIndice), indice[3]+" vasos de hambre", null, null, 'center');
+			}
+			if(indice[4] === 1){
+				doc.text(105, posIndice+(3*interIndice), indice[4]+" cucharadita de ideología", null, null, 'center');
+			}
+			else if(indice[4] != 1){
+				doc.text(105, posIndice+(3*interIndice), indice[4]+" cucharaditas de ideología", null, null, 'center');
+			}
+			if(indice[5] === 1){
+				doc.text(105, posIndice+(4*interIndice), indice[5]+" huevo", null, null, 'center');
+			}
+			else if(indice[5] != 1){
+				doc.text(105, posIndice+(4*interIndice), indice[5]+" huevos", null, null, 'center');
+			}
+			if(indice[6] === 1){
+				doc.text(105, posIndice+(5*interIndice), indice[6]+" pizca de arte", null, null, 'center');
+			}
+			else if(indice[6] != 1){
+				doc.text(105, posIndice+(5*interIndice), indice[6]+" pizcas de arte", null, null, 'center');
+			}
+
 			doc.text(105, posIndice+(6*interIndice), indice[7]+"00 mililitros de cine y revolución", null, null, 'center');
-			doc.text(105, posIndice+(7*interIndice), indice[8]+" espigas de trigo", null, null, 'center');
-			doc.text(105, posIndice+(8*interIndice), indice[9]+" dientes de familia", null, null, 'center');
-			doc.text(105, posIndice+(9*interIndice), indice[10]+" litros de cerveza", null, null, 'center');
+
+			if(indice[8] === 1){
+				doc.text(105, posIndice+(7*interIndice), indice[8]+" espiga de trigo", null, null, 'center');
+			}
+			else if(indice[8] != 1){
+				doc.text(105, posIndice+(7*interIndice), indice[8]+" espigas de trigo", null, null, 'center');
+			}
+			if(indice[9] === 1){
+				doc.text(105, posIndice+(8*interIndice), indice[9]+" diente de familia", null, null, 'center');
+			}
+			else if(indice[9] != 1){
+				doc.text(105, posIndice+(8*interIndice), indice[9]+" dientes de familia", null, null, 'center');
+			}
+			if(indice[10] === 1){
+				doc.text(105, posIndice+(9*interIndice), indice[10]+" litro de cerveza", null, null, 'center');
+			}
+			else if(indice[10] != 1){
+				doc.text(105, posIndice+(9*interIndice), indice[10]+" litros de cerveza", null, null, 'center');
+			}
+
 			doc.text(105, posIndice+(10*interIndice), "Suficiente agua", null, null, 'center');
-			doc.text(105, posIndice+(11*interIndice), indice[11]+" civilizaciones medianas", null, null, 'center');
-			doc.text(105, posIndice+(12*interIndice), indice[12]+" moños de trigo transgénico", null, null, 'center');
-			doc.text(105, posIndice+(13*interIndice), indice[13]+" cucharadas de cultura popular", null, null, 'center');
-			doc.text(105, posIndice+(14*interIndice), indice[14]+" docenas de políticos en harina", null, null, 'center');
-			doc.text(105, posIndice+(15*interIndice), indice[15]+" libras de harina para preparar pócima", null, null, 'center');
-			doc.text(105, posIndice+(16*interIndice), indice[16]+" batallas por el trigo, picada", null, null, 'center');
+
+			if(indice[11] === 1){
+				doc.text(105, posIndice+(11*interIndice), indice[11]+" civilización mediana", null, null, 'center');
+			}
+			else if(indice[11] != 1){
+				doc.text(105, posIndice+(11*interIndice), indice[11]+" civilizaciones medianas", null, null, 'center');
+			}
+			if(indice[12] === 1){
+				doc.text(105, posIndice+(12*interIndice), indice[12]+" moño de trigo transgénico", null, null, 'center');
+			}
+			else if(indice[12] != 1){
+				doc.text(105, posIndice+(12*interIndice), indice[12]+" moños de trigo transgénico", null, null, 'center');
+			}
+			if(indice[13] === 1){
+				doc.text(105, posIndice+(13*interIndice), indice[13]+" cucharada de cultura popular", null, null, 'center');
+			}
+			else if(indice[13] != 1){
+				doc.text(105, posIndice+(13*interIndice), indice[13]+" cucharadas de cultura popular", null, null, 'center');
+			}
+			if(indice[14] === 1){
+				doc.text(105, posIndice+(14*interIndice), indice[14]+" docena de políticos en harina", null, null, 'center');
+			}
+			else if(indice[14] != 1){
+				doc.text(105, posIndice+(14*interIndice), indice[14]+" docenas de políticos en harina", null, null, 'center');
+			}
+			if(indice[15] === 1){
+				doc.text(105, posIndice+(15*interIndice), indice[15]+" libra de harina para preparar pócima", null, null, 'center');
+			}
+			else if(indice[15] != 1){
+				doc.text(105, posIndice+(15*interIndice), indice[15]+" libras de harina para preparar pócima", null, null, 'center');
+			}
+			if(indice[16] === 1){
+				doc.text(105, posIndice+(16*interIndice), indice[16]+" batalla por el trigo, picada", null, null, 'center');
+			}
+			else if(indice[16] != 1){
+				doc.text(105, posIndice+(16*interIndice), indice[16]+" batallas por el trigo, picada", null, null, 'center');
+			}
+
 			doc.text(105, posIndice+(17*interIndice), "Tecnología diluida al gusto", null, null, 'center');
 			//console.log("Crea página indice ");
 			doc.addPage();
@@ -248,7 +327,7 @@ function cargaImagenes(page,numLib,autor,titulo,indice) {
 				if(tempCase.indexOf(randomCase) ===  -1){
 				//console.log("Página guarda "+randomCase);
 				tempCase.push(randomCase);
-				console.log("Random case "+tempCase);
+				//console.log("Random case "+tempCase);
 				switch (randomCase) {
 			    case 0:
 			        doc.addImage(imgGuarda1,'jpeg',0,0,210,297);
@@ -298,18 +377,19 @@ function cargaImagenes(page,numLib,autor,titulo,indice) {
 					}
 					else if(tempCase.indexOf(randomCase) > -1){
 						i = i-1;
-						console.log("If I "+i + "Caso guarda repetido "+randomCase);
+						//console.log("If I "+i + "Caso guarda repetido "+randomCase);
 					}
 			}
 
 			var longitudLibro = page.length;
 
 			//Bucle pasando por todas las páginas
-			for (var i = 0; i < page.length; i++) {
+			for (var i = 0; i < (page.length+1); i++) {
 				// Llamo a la función get Image para extraer el bruto de la imagen.
 				getImageFromUrl('img/'+page[i]+'.jpeg', createPage);
-				//console.log("Iteracción a "+i);
-				//console.log("Número de página a "+page[i]);
+				//console.log("Iteracción "+i);
+				//console.log("Longitud array page " +page.length);
+				//console.log("Número de página "+page[i]);
 			}
 
 

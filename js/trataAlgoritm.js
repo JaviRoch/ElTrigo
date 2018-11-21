@@ -1,6 +1,6 @@
 function trataAlgoritm (libro) {
 
-//Cargamos valores de unidades de páginas en variables
+//Cargamos valores de unidades de páginas dísponibles para cada temñatica 
   var CultPoMin = 0; //al 3
   var LiteMin = 100;
   var CineMin = 200;
@@ -911,6 +911,7 @@ En otro planeta
   function aleatoriPaginas(variable,max,min){
     variable = Math.trunc(variable);
     //console.log("Cambio de carpeta "+"variable "+variable+ " min "+min+" max "+max);
+    //console.log("Cambio de carpeta, cantidad paginas "+variable);
     for(var i = 0; i<variable;i++){
       var pagTemp = Math.round(Math.random()*(max-min)+parseInt(min));
       //console.log("Iteracción "+i);
