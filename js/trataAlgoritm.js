@@ -57,9 +57,9 @@ function trataAlgoritm (libro) {
   var CiviOtrasMax = 2617;
 
 //Variables de número de páginas por carpeta con carga inicial de valores
-  CultPo = 3;
+  CultPo = 4;
   Lite = 2;
-  Cine = 1;
+  Cine = 2;
   Arte = 6;
   Reli = 2;
   SimboPon = 2;
@@ -75,16 +75,16 @@ function trataAlgoritm (libro) {
   Norma = 1;
   Excede = 2;
   EnferTri = 3;
-  Producto = 4;
+  Producto = 5;
   AlbumFam = 6;
-  Rece = 1;
+  Rece = 2;
   EnferPer = 2;
   Antigu = 5;
   Virtu = 2;
   Mujer = 4;
   CiviOtras = 2;
-  Otro = 5;
-  Guarda = 2;
+  Otro = 6;
+  //Guarda = 2;
 
   //console.log("Valor inicial "+ CultPo,Lite,Cine,Arte,Reli,Econo,Terri,Guerra,Poli,Orien,Ponien,Indus,Gen,Norma,Excede,EnferTri,AlbumFam,Rece,EnferPer,Antigu,Virtu,Mujer,Otro);
 

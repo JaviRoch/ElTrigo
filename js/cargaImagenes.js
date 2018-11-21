@@ -60,38 +60,6 @@ function cargaImagenes(page,numLib,autor,titulo,indice) {
 			return ret;
 		}
 
-		//Función para extraer los datos de la imagen en binario
-		var getImageFromUrl2 = function(url, callback) {
-			//console.log("Url "+url);
-			var img = new Image(), data, ret = {
-				data: null,
-				pending: true
-			};
-			img.onError = function() {
-				throw new Error('Cannot load image: "'+url+'"');
-			};
-			img.onload = function() {
-				var canvas = document.createElement('canvas');
-				document.body.appendChild(canvas);
-				canvas.width = 2100;
-				canvas.height = 2970;
-				var ctx = canvas.getContext('2d');
-				ctx.drawImage(img, 0, 0);
-				// Grab the image as a jpeg encoded in base64, but only the data
-				data = canvas.toDataURL('image/jpeg').slice('data:image/jpeg;base64,'.length);
-				// Convert the data to binary form
-				data = atob(data);
-				document.body.removeChild(canvas);
-				ret['data'] = data;
-				ret['pending'] = false;
-				// Hacemos una llamada a la función createPage que hemos introducido como variable
-				callback(data);
-			};
-			//console.log("Url2 "+url);
-			img.src = url;
-			//console.log("Url3 "+img.src);
-			return ret;
-		}
 
 		//Función de creación de página de imagen
 		var createPage = function(imgData) {
@@ -102,7 +70,7 @@ function cargaImagenes(page,numLib,autor,titulo,indice) {
 			paginaActual = paginaActual +1;
 			//console.log("Página actual  "+paginaActual);
 			//console.log("Longitud array page " +page.length);
-			if(paginaActual === page.length){
+			if(paginaActual === (page.length-1)){
 				//console.log("Función última página");
 				//Textos de última página
 				doc.setFont("helvetica");
@@ -280,7 +248,7 @@ function cargaImagenes(page,numLib,autor,titulo,indice) {
 				if(tempCase.indexOf(randomCase) ===  -1){
 				//console.log("Página guarda "+randomCase);
 				tempCase.push(randomCase);
-				//console.log("Random case "+tempCase);
+				console.log("Random case "+tempCase);
 				switch (randomCase) {
 			    case 0:
 			        doc.addImage(imgGuarda1,'jpeg',0,0,210,297);
@@ -293,7 +261,7 @@ function cargaImagenes(page,numLib,autor,titulo,indice) {
 							doc.addPage();
 							break;
 			    case 2:
-			        doc.addImage(imgGuarda2,'jpeg',0,0,210,297);
+			        doc.addImage(imgGuarda3,'jpeg',0,0,210,297);
 							//console.log("Case 2 ");
 							doc.addPage();
 							break;
@@ -330,7 +298,7 @@ function cargaImagenes(page,numLib,autor,titulo,indice) {
 					}
 					else if(tempCase.indexOf(randomCase) > -1){
 						i = i-1;
-						//console.log("If I "+i + "Caso guarda repetido "+randomCase);
+						console.log("If I "+i + "Caso guarda repetido "+randomCase);
 					}
 			}
 
@@ -343,24 +311,6 @@ function cargaImagenes(page,numLib,autor,titulo,indice) {
 				//console.log("Iteracción a "+i);
 				//console.log("Número de página a "+page[i]);
 			}
-			/*for (var i = 3; i < 20; i++) {
-				// Llamo a la función get Image para extraer el bruto de la imagen.
-				getImageFromUrl2('img/'+page[i]+'.jpeg', createPage);
-				console.log("Iteracción b "+i);
-				console.log("Número de página b "+page[i]);
-			}
-			for (var i = 0; i < 2; i++) {
-				// Llamo a la función get Image para extraer el bruto de la imagen.
-				getImageFromUrl('img/'+page[i]+'.jpeg', createPage);
-				console.log("Iteracción a "+i);
-				console.log("Número de página a "+page[i]);
-			}*/
-			/*paginaFinal = true;
-			for (var i = 50; i < page.length; i++) {
-				// Llamo a la función get Image para extraer el bruto de la imagen.
-				getImageFromUrl('img/'+page[i]+'.jpeg', createPage);
-				console.log("Iteracción 2 "+i);
-				console.log("Número de página 2 "+page[i]);
-			}*/
+
 
 }
