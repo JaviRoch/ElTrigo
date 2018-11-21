@@ -26,32 +26,32 @@ Para un correcto funcionamiento tan solo se le deben de dar permisos de escritur
 
 
 ## Temáticas
-Cultura Popular
-Literatura
-Cine
-Arte
-Religión
-Simbolismo Poniente
-Simbolismo Oriente
-Economía
-Territorio
-Guerra
-Política
-Oriente
-Poniente
-Industria
-Genética
-Normas
-Excedente
-Enfermedad del trigo
-Producto
-Álbum de familia
-Recetas
-Enfermedad de las personas
-Civilizaciones antiguas
-Civilizaciones virtuales
-Civilizaciones mujer
-Civilizaciones otras
+Cultura Popular,
+Literatura,
+Cine,
+Arte,
+Religión,
+Simbolismo Poniente,
+Simbolismo Oriente,
+Economía,
+Territorio,
+Guerra,
+Política,
+Oriente,
+Poniente,
+Industria,
+Genética,
+Normas,
+Excedente,
+Enfermedad del trigo,
+Producto,
+Álbum de familia,
+Recetas,
+Enfermedad de las personas,
+Civilizaciones antiguas,
+Civilizaciones virtuales,
+Civilizaciones mujer,
+Civilizaciones otras,
 Otras
 
 Las imágenes del repositorio son de ejemplo
