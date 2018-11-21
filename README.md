@@ -10,7 +10,7 @@ La base de este taller ha sido la elaboración de un gran archivo de más de 300
 ## Programación
 La aplicación web consta de un formulario html bootstrap con una personalización estética de diseño brutalist.
 
-Dependiendo de la contestación de las preguntas se ha creado un algoritmo que seleccionará más o menos imágenes de cada temática. Dentro de cada temática tiene una variable de aleatoriedad.
+Dependiendo de la contestación de las preguntas se ha creado un algoritmo que seleccionará mayor o menor páginas de cada temática. Dentro de cada temática tiene una variable de aleatoriedad.
 
 El resultado final es un libro en PDF descargable creado con la librería de javascript jspdf con unas 80 páginas de las 900 disponibles.
 
