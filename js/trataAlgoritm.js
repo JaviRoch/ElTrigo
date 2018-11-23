@@ -1,6 +1,6 @@
 function trataAlgoritm (libro) {
 
-//Cargamos valores de unidades de páginas dísponibles para cada temñatica 
+//Cargamos valores de unidades de páginas dísponibles para cada temñatica
   var CultPoMin = 0; //al 3
   var LiteMin = 100;
   var CineMin = 200;
@@ -28,14 +28,14 @@ function trataAlgoritm (libro) {
   var SimboPonMin = 2400;
   var SimboOriMin = 2500;
   var CiviOtrasMin = 2600;
-  var CultPoMax =  34;
+  var CultPoMax =  37;
   var LiteMax =  141;
   var CineMax =  248;
   var ArteMax =  333;
   var ReliMax =  426;
-  var EconoMax =  519;
-  var TerriMax =  649;
-  var GuerraMax =  752;
+  var EconoMax =  523;
+  var TerriMax =  651;
+  var GuerraMax =  753;
   var PoliMax =  819;
   var OrienMax =  918;
   var PonienMax =  1017;
@@ -43,16 +43,16 @@ function trataAlgoritm (libro) {
   var GenMax = 1241;
   var NormaMax =  1309;
   var ExcedeMax =  1425;
-  var EnferTriMax =  1532;
+  var EnferTriMax =  1535;
   var AlbumFamMax =  1634;
-  var EnferPerMax =  1712;
+  var EnferPerMax =  1718;
   var ReceMax =  1858;
   var AntiguMax =  1922;
   var VirtuMax =  2020;
-  var MujerMax =  2124;
-  var OtroMax =  2235;
-  var ProducMax = 2340;
-  var SimboPonMax = 2416;
+  var MujerMax =  2125;
+  var OtroMax =  2237;
+  var ProducMax = 2342;
+  var SimboPonMax = 2417;
   var SimboOriMax = 2511;
   var CiviOtrasMax = 2617;
 
